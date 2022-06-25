@@ -3,13 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-v2 - Welcome to Using CHS AWS ECCOE to Visualize and Process LiDAR
+v2 - Welcome to Airflow Training Tony
 ===================================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   00_overview.md
    9_quests.md
    00define_lidar.md
    1_Engineering_Notebook.md
