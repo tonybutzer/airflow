@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>v2 - Welcome to Using CHS AWS ECCOE to Visualize and Process LiDAR &mdash; LiDAR in the cloud 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quests" href="9_quests.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> LiDAR in the cloud
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="9_quests.html">Quests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="9_quests.html#mahesh-cloud-training">Mahesh Cloud Training</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#lesson-1-bigpangeo-persistent-conda">Lesson 1 bigPangeo Persistent Conda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#lesson-2-custom-chs-pesonal-pangeo-cloud-computer-ec2-instance">Lesson 2 Custom CHS Pesonal Pangeo Cloud Computer ec2 instance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="9_quests.html#exercises-for-mahesh">Exercises for Mahesh</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#lesson-2a-ec2">Lesson 2a - EC2</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="9_quests.html#in-pictures">In Pictures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_quests.html#garden-of-the-gods-v2">Garden of the Gods v2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#community-and-collaborators">community and collaborators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="9_quests.html#lessor">lessor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#projections">projections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#tutorials">Tutorials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#next-quests-to-be-sorted">next quests - to be sorted</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#findings-victories">findings victories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#day-in-the-life-process">day-in-the-life process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#demos-boulder">demos boulder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#technology-tools">technology tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#issues-bugs">issues bugs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00define_lidar.html">Lidar in the CHS AWS Cloud</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#executive-summary">Executive Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="00define_lidar.html#you-really-should-be-using-the-cloud">You really should be using the cloud.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="00define_lidar.html#deliverables">Deliverables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#scientists-will-rule-the-world">Scientists will rule the world</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#expected-audience">Expected Audience</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00define_lidar.html#vision">Vision</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#computers-and-website">Computers and Website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#aws-pangeo">AWS Pangeo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#human-resources">Human Resources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="00define_lidar.html#list-for-now-needs-work">List for now - needs work</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#github">github</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="00define_lidar.html#where-are-my-assets">Where are my assets?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="00define_lidar.html#makefiles-and-dockerfiles">Makefiles and Dockerfiles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00define_lidar.html#overview">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#science-with-a-chromebook">Science with a chromebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#instructors-by-example">Instructors by Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html">LiDAR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#what-s-new">What’s New</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#potreeconverter">PotreeConverter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#ajit-examples">Ajit examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#pdal">PDAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#march-2022">March 2022</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#experiments">Experiments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1_Engineering_Notebook.html#viewing-data-with-the-potree-viewer">Viewing Data With the Potree Viewer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1_Engineering_Notebook.html#https-github-com-hobu-usgs-lidar">https://github.com/hobu/usgs-lidar/</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="1_Engineering_Notebook.html#cool-notes-from-readme">Cool Notes from Readme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="1_Engineering_Notebook.html#http-server-don-t-forget-the-tunnel">Http server - don’t forget the tunnel</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="1_Engineering_Notebook.html#potree-docker-image">potree docker image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1_Engineering_Notebook.html#dep-conda-based-docker-image-demo">3DEP - conda based docker image - demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1_Engineering_Notebook.html#rclone-testing-from-tallgrass-caldera-eccoe-lidar-s3-bucket">rclone testing from tallgrass:/caldera –&gt; eccoe-lidar (s3 bucket)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1_Engineering_Notebook.html#example">example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#wine-version">wine version</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#conversions-reprojecting-decimating">Conversions Reprojecting Decimating</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#lastools">lastools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#photon-azure-viewer">Photon Azure Viewer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#areas-od-study-ideas">Areas od Study - Ideas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#links-first-blush">Links first blush</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#formats-for-3d-pointclouds">formats for 3d pointclouds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#pointcloud-to-triangles">pointcloud to triangles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#open3d-videos">open3d videos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#git">git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#pypotree">pypotree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#medium-article">medium article</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#hoop-3d-cad">hoop 3d cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#lidar-books">lidar books</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#jupyter-viz">jupyter viz</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_data.html">Oahe Lidar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_orig_readme.html">Lidar USGS South Dakota Data in the Cloud</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_orig_readme.html#current-action">Current Action</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_orig_readme.html#actions">Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_orig_readme.html#ssh">ssh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="2_orig_readme.html#keys">Keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2_orig_readme.html#linux-like-clients">Linux like clients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2_orig_readme.html#vdi">VDI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">LiDAR in the cloud</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>v2 - Welcome to Using CHS AWS ECCOE to Visualize and Process LiDAR</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="v2-welcome-to-using-chs-aws-eccoe-to-visualize-and-process-lidar">
+<h1>v2 - Welcome to Using CHS AWS ECCOE to Visualize and Process LiDAR<a class="headerlink" href="#v2-welcome-to-using-chs-aws-eccoe-to-visualize-and-process-lidar" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="9_quests.html">Quests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="9_quests.html#mahesh-cloud-training">Mahesh Cloud Training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_quests.html#in-pictures">In Pictures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_quests.html#garden-of-the-gods-v2">Garden of the Gods v2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00define_lidar.html">Lidar in the CHS AWS Cloud</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#executive-summary">Executive Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#scientists-will-rule-the-world">Scientists will rule the world</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#expected-audience">Expected Audience</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00define_lidar.html#vision">Vision</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#computers-and-website">Computers and Website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#aws-pangeo">AWS Pangeo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#human-resources">Human Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#github">github</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00define_lidar.html#overview">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#science-with-a-chromebook">Science with a chromebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#instructors-by-example">Instructors by Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00define_lidar.html#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html">LiDAR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#what-s-new">What’s New</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#potreeconverter">PotreeConverter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#ajit-examples">Ajit examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#pdal">PDAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#march-2022">March 2022</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#experiments">Experiments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#wine-version">wine version</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#conversions-reprojecting-decimating">Conversions Reprojecting Decimating</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#lastools">lastools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#photon-azure-viewer">Photon Azure Viewer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#areas-od-study-ideas">Areas od Study - Ideas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#links-first-blush">Links first blush</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#formats-for-3d-pointclouds">formats for 3d pointclouds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#pointcloud-to-triangles">pointcloud to triangles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="1_Engineering_Notebook.html#open3d-videos">open3d videos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#git">git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#pypotree">pypotree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#medium-article">medium article</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#hoop-3d-cad">hoop 3d cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#lidar-books">lidar books</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Engineering_Notebook.html#jupyter-viz">jupyter viz</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_data.html">Oahe Lidar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_orig_readme.html">Lidar USGS South Dakota Data in the Cloud</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_orig_readme.html#current-action">Current Action</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_orig_readme.html#actions">Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_orig_readme.html#ssh">ssh</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="9_quests.html" class="btn btn-neutral float-right" title="Quests" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, Tony Butzer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
