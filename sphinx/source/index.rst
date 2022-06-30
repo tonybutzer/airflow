@@ -12,10 +12,6 @@ v2 - Welcome to Airflow Training Tony
 
    00_overview.md
    9_quests.md
-   00define_lidar.md
-   1_Engineering_Notebook.md
-   10_data.md
-   2_orig_readme.md
 
 Indices and tables
 ==================
