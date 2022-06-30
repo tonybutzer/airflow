@@ -21,7 +21,7 @@ source_parsers = {'.md': CommonMarkParser}
 
 # -- Project information -----------------------------------------------------
 
-project = 'LiDAR in the cloud'
+project = 'Airflow Sandbox Training in the cloud'
 copyright = '2022, Tony Butzer'
 author = 'Tony Butzer'
 
