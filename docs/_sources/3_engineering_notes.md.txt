@@ -2,6 +2,17 @@
 
 # smartflow references
 
+- https://blacksky.smartgitlab.com/smartflow/markdown/Framework/Getting-Started.html
+- https://app.slack.com/client/TN3QR7WAH/C03KCBSUMC0/thread/C03KCBSUMC0-1654795666.581149
+- https://blacksky.smartgitlab.com/smartflow/markdown/Administration/Deployment.html#installation
+
+- Repository Link: https://smartgitlab.com/blacksky/smartflow
+- Documentation Link: https://blacksky.smartgitlab.com/smartflow
+
+> This channel is to be used for:
+SmartFlow Announcements
+General SmartFlow questions
+To coordinate specific tech support (most likely to be moved off channel for resolution) 
 
 ## Airflow Tutorial Videos - document good to bad
 

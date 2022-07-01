@@ -12,6 +12,7 @@ v2 - Welcome to Airflow Training Tony
 
    00_overview.md
    9_quests.md
+   3_engineering_notes.md
 
 Indices and tables
 ==================
