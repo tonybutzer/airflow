@@ -3,6 +3,27 @@
 # smartflow references
 
 
+## Airflow Tutorial Videos - document good to bad
+
+- https://www.youtube.com/watch?v=AHMm1wfGuHE
+
+
+## Airflow Operators
+
+- bash
+- noop
+- SimpleHttpOperator
+- EmailOperator
+
+
+    BashOperator - executes a bash command
+
+    PythonOperator - calls an arbitrary Python function
+
+    EmailOperator - sends an email
+
+
+
 ## Running Airflow with Docker Compose
 
 - https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html
