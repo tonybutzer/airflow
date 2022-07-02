@@ -39,3 +39,18 @@ The ** allows us to pass any number of keyword arguments. A keyword argument is 
 
 An example of a keyword argument is fun(foo=2,bar=7).
 
+
+- You can call the function with any arguments you want.
+	
+
+``` python
+def capital_cities(**kwargs): 
+    # initialize an empty list to store the result
+    result = []
+    for key, value in kwargs.items():
+        result.append("The capital city of {} is {} .format (key,value)
+ 
+    return result
+print capital_city(China = "Beijing",Cairo = "Egypt",Rome = "Italy"))
+```
+

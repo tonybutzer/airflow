@@ -240,6 +240,19 @@ What Are Kwargs?</p>
 The ** allows us to pass any number of keyword arguments. A keyword argument is basically a dictionary.</p></li>
 </ul>
 <p>An example of a keyword argument is fun(foo=2,bar=7).</p>
+<ul class="simple">
+<li><p>You can call the function with any arguments you want.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">capital_cities</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span> 
+    <span class="c1"># initialize an empty list to store the result</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;The capital city of {} is {} .format (key,value)</span>
+ 
+    <span class="k">return</span> <span class="n">result</span>
+<span class="k">print</span> <span class="n">capital_city</span><span class="p">(</span><span class="n">China</span> <span class="o">=</span> <span class="s2">&quot;Beijing&quot;</span><span class="p">,</span><span class="n">Cairo</span> <span class="o">=</span> <span class="s2">&quot;Egypt&quot;</span><span class="p">,</span><span class="n">Rome</span> <span class="o">=</span> <span class="s2">&quot;Italy&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
