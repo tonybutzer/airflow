@@ -1,10 +1,8 @@
 # Quests
 
-## Shinbashi DAG
 
-### WBS
 
-### 0. Stac Search Task
+## 0. Stac Search Task
 	- People - Adrian Gould
 	- Code Study
 		- https://smartgitlab.com/blacksky/smartflow/-/blob/main/dags/Demo_Shinbashi.py
@@ -18,7 +16,7 @@
 - add tony additions
 - capture all this in build_docker/Makefile
 
-## Docker Compose Trial Airflow - Celery
+### Docker Compose Trial Airflow - Celery
 
 ### Quickstart
 
