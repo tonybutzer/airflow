@@ -54,3 +54,11 @@ def capital_cities(**kwargs):
 print capital_city(China = "Beijing",Cairo = "Egypt",Rome = "Italy"))
 ```
 
+
+### Source
+
+References to elements in the code, scripts, or specific Airflow classes/variables/values are often in italics to help distinguish them from the surrounding text. Source code for all examples and instructions to run them using Docker and Docker Compose are available in our GitHub repository (
+- https://github.com/BasPH/data-pipelines-with-apache-airflow) and can be downloaded via the book’s website (
+- www.manning.com/books/data-pipelines-with-apache-airflow).
+
+de Ruiter, Julian; Harenslak, Bas. Data Pipelines with Apache Airflow . Manning. Kindle Edition. 
