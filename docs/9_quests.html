@@ -98,6 +98,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Quests</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#shinbashi-dag">Shinbashi DAG</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#wbs">WBS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stac-search-task">0. Stac Search Task</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#building-the-docker-smartflow">Building the Docker smartflow</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#docker-compose-trial-airflow-celery">Docker Compose Trial Airflow - Celery</a><ul>
@@ -107,6 +109,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#airflow-study">1 Airflow Study</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#prerequisites-args-and-kwargs">Prerequisites *args and *kwargs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#introducing-airflow">Introducing Airflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#main-components-scheduler-workers-webserver">3 main components - scheduler; workers; webserver</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -193,24 +200,26 @@
 <h2>Shinbashi DAG<a class="headerlink" href="#shinbashi-dag" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="wbs">
 <h3>WBS<a class="headerlink" href="#wbs" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>Stac Search Task</p>
+</div>
+<div class="section" id="stac-search-task">
+<h3>0. Stac Search Task<a class="headerlink" href="#stac-search-task" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">People</span> <span class="o">-</span> <span class="n">Adrian</span> <span class="n">Gould</span>
+<span class="o">-</span> <span class="n">Code</span> <span class="n">Study</span>
+	<span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">smartgitlab</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">blacksky</span><span class="o">/</span><span class="n">smartflow</span><span class="o">/-/</span><span class="n">blob</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">dags</span><span class="o">/</span><span class="n">Demo_Shinbashi</span><span class="o">.</span><span class="n">py</span>
+	<span class="o">-</span> <span class="n">clone</span> <span class="n">the</span> <span class="n">repo</span> 
+<span class="o">-</span> <span class="n">Stub</span> <span class="n">out</span> <span class="n">Noops</span> <span class="k">for</span> <span class="n">main</span> <span class="n">tasks</span> <span class="ow">in</span> <span class="n">devcode</span>
+	<span class="o">-</span> <span class="n">DEPLOY</span> <span class="n">TO</span> <span class="n">airflow</span> <span class="o">-</span> <span class="k">with</span> <span class="n">makefile</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="building-the-docker-smartflow">
+<h3>Building the Docker smartflow<a class="headerlink" href="#building-the-docker-smartflow" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>People - Adrian Gould</p></li>
-<li><p>Code Study</p>
-<ul>
-<li><p>https://smartgitlab.com/blacksky/smartflow/-/blob/main/dags/Demo_Shinbashi.py</p></li>
-<li><p>clone the repo</p></li>
+<li><p>clone adrians github</p></li>
+<li><p>build in ~/work</p></li>
+<li><p>add tony additions</p></li>
+<li><p>capture all this in build_docker/Makefile</p></li>
 </ul>
-</li>
-<li><p>Stub out Noops for main tasks in devcode</p>
-<ul>
-<li><p>DEPLOY TO airflow - with makefile</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
 </div>
 </div>
 <div class="section" id="docker-compose-trial-airflow-celery">
@@ -262,7 +271,64 @@ The ** allows us to pass any number of keyword arguments. A keyword argument is 
 <li><p>https://github.com/BasPH/data-pipelines-with-apache-airflow) and can be downloaded via the book’s website (</p></li>
 <li><p>www.manning.com/books/data-pipelines-with-apache-airflow).</p></li>
 </ul>
-<p>de Ruiter, Julian; Harenslak, Bas. Data Pipelines with Apache Airflow . Manning. Kindle Edition.</p>
+</div>
+<div class="section" id="getting-started">
+<h3>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>data pipelines</p></li>
+<li><p>airflow’s role</p></li>
+<li><p>compare to other technologies</p></li>
+<li><p>scheduling semantics</p></li>
+<li><p>templating</p></li>
+<li><p>then on to part 2</p></li>
+<li><p>airflow is an orchetrator - the spider in the web</p></li>
+<li><p>weather task example</p>
+<ul>
+<li><p>fetch weather data via ap</p></li>
+<li><p>clean and organize weather data</p></li>
+<li><p>push cleanded data to weather dashboard</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p>This type of graph is typically called a directed acyclic graph (DAG), as the graph contains directed edges and does not contain any loops or cycles (acyclic).</p>
+</div></blockquote>
+<p>Name Originated at1 Workflows defined in Written in Scheduling Backfilling User interface2 Installation platform Horizontally scalable</p>
+<ul class="simple">
+<li><p>Airflow Airbnb Python Python Yes Yes Yes Anywhere Yes</p></li>
+<li><p>Argo Applatix YAML Go Third party3 Yes Kubernetes Yes</p></li>
+<li><p>Azkaban LinkedIn YAML Java Yes No Yes Anywhere Conductor Netflix JSON Java No Yes Anywhere Yes</p></li>
+<li><p>Luigi Spotify Python Python No Yes Yes Anywhere Yes</p></li>
+<li><p>Make Custom DSL C No No No Anywhere No</p></li>
+<li><p>Metaflow Netflix Python Python No No Anywhere Yes</p></li>
+<li><p>Nifi NSA UI Java Yes No Yes Anywhere Yes Oozie</p></li>
+</ul>
+<p>de Ruiter, Julian; Harenslak, Bas. Data Pipelines with Apache Airflow (p. 9). Manning. Kindle Edition.</p>
+</div>
+<div class="section" id="introducing-airflow">
+<h3>Introducing Airflow<a class="headerlink" href="#introducing-airflow" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>define DAGS using python code.</p>
+<ul>
+<li><p>set of tasks</p></li>
+<li><p>metadata</p></li>
+<li><p>scheduling</p></li>
+</ul>
+</li>
+<li><p>airflow extensions -</p>
+<ul>
+<li><p>databases</p></li>
+<li><p>cloud services</p></li>
+<li><p>notification linkages</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="main-components-scheduler-workers-webserver">
+<h4>3 main components - scheduler; workers; webserver<a class="headerlink" href="#main-components-scheduler-workers-webserver" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>airflow metastore(database) key component for linkages</p></li>
+</ul>
+</div>
 </div>
 </div>
 </div>
