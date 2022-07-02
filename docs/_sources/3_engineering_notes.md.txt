@@ -33,6 +33,8 @@ To coordinate specific tech support (most likely to be moved off channel for res
 
     EmailOperator - sends an email
 
+- https://stackoverflow.com/questions/62660347/airflow-send-email-with-aws-ses
+
 
 
 ## Running Airflow with Docker Compose
