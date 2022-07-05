@@ -11,10 +11,19 @@
 		- DEPLOY TO airflow - with makefile
 
 ### Building the Docker smartflow
-- clone adrians github
-- build in ~/work
-- add tony additions
-- capture all this in build_docker/Makefile
+- clone adrians github - DONE
+- build in ~/work (build_docker dir) - DONE
+	- add tony additions
+	- capture all this in build_docker/Makefile
+
+#### ISSUE:
+1. The docker environment is slightly different than the smart based environment
+	- the jinja variables
+		- pount to s3 buckets
+	- they use kubernetes
+		- the sandbox uses Celery
+2. We need to train ourselves on all things  Airflow, Kubernetes, docker-compose - meta-stores - celery
+3. We need to learn how to write Airflow operators and know which operators and task structires make sense in a best-practices sort of way.
 
 ### Docker Compose Trial Airflow - Celery
 

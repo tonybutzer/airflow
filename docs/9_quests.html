@@ -100,7 +100,10 @@
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Quests</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#stac-search-task">0. Stac Search Task</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#building-the-docker-smartflow">Building the Docker smartflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#building-the-docker-smartflow">Building the Docker smartflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#issue">ISSUE:</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#docker-compose-trial-airflow-celery">Docker Compose Trial Airflow - Celery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#quickstart">Quickstart</a></li>
 </ul>
@@ -213,11 +216,35 @@
 <div class="section" id="building-the-docker-smartflow">
 <h3>Building the Docker smartflow<a class="headerlink" href="#building-the-docker-smartflow" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>clone adrians github</p></li>
-<li><p>build in ~/work</p></li>
+<li><p>clone adrians github - DONE</p></li>
+<li><p>build in ~/work (build_docker dir) - DONE</p>
+<ul>
 <li><p>add tony additions</p></li>
 <li><p>capture all this in build_docker/Makefile</p></li>
 </ul>
+</li>
+</ul>
+<div class="section" id="issue">
+<h4>ISSUE:<a class="headerlink" href="#issue" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>The docker environment is slightly different than the smart based environment</p>
+<ul class="simple">
+<li><p>the jinja variables</p>
+<ul>
+<li><p>pount to s3 buckets</p></li>
+</ul>
+</li>
+<li><p>they use kubernetes</p>
+<ul>
+<li><p>the sandbox uses Celery</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>We need to train ourselves on all things  Airflow, Kubernetes, docker-compose - meta-stores - celery</p></li>
+<li><p>We need to learn how to write Airflow operators and know which operators and task structires make sense in a best-practices sort of way.</p></li>
+</ol>
+</div>
 </div>
 <div class="section" id="docker-compose-trial-airflow-celery">
 <h3>Docker Compose Trial Airflow - Celery<a class="headerlink" href="#docker-compose-trial-airflow-celery" title="Permalink to this headline">¶</a></h3>
