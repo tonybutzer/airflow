@@ -85,7 +85,10 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#purpose">Purpose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#mission">Mission</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#objectives">Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#objectives">Objectives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prerequsite-steps">Prerequsite steps</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#quests">Quests</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#get-docker-airflow-running-in-chs">Get Docker Airflow Running in CHS</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#references">References</a></li>
@@ -199,12 +202,33 @@
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="purpose">
 <h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>This project will explore airflow as a workflow manager - used by IARPA/SMART project and potrentially used by EROS for projects such as LCMAP/NLCD.</p>
 </div>
 <div class="section" id="mission">
 <h2>Mission<a class="headerlink" href="#mission" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Get smart on Airflow</p></li>
+<li><p>Implement sample DAGS</p></li>
+</ol>
 </div>
 <div class="section" id="objectives">
 <h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Run GAASS-PY as a DAG Flow and contrast this with simple docker (python module) based orchestration</p></li>
+</ol>
+<div class="section" id="prerequsite-steps">
+<h3>Prerequsite steps<a class="headerlink" href="#prerequsite-steps" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Get airflow running in CHS as a docker-compose cluster of containers</p></li>
+<li><p>Pass compentancy tests such as running our fisrt Shinbashi DAG</p></li>
+<li><p>Explore providers notably:</p>
+<ul class="simple">
+<li><p>Celery</p></li>
+<li><p>Kubernetes</p></li>
+</ul>
+</li>
+</ol>
+</div>
 </div>
 <div class="section" id="quests">
 <h2>Quests<a class="headerlink" href="#quests" title="Permalink to this headline">¶</a></h2>
@@ -220,6 +244,14 @@
 <div class="section" id="references">
 <h4>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h4>
 <p>https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html</p>
+<ul class="simple">
+<li><p>BOOK:</p>
+<ul>
+<li><p>Data Pipelines with Apache Airflow</p></li>
+<li><p>by Bas P. Harenslak (Author), Julian Rutger de Ruiter (Author)</p></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
