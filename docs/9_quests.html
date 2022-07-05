@@ -110,6 +110,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#main-components-scheduler-workers-webserver">3 main components - scheduler; workers; webserver</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#why-airflow-pros-cons">Why Airflow PROS/CONS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#reasons-to-choose-airflow-in-the-past-sections">Reasons to choose Airflow In the past sections,</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reasons-not-to-choose-airflow">Reasons not to choose Airflow</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -317,6 +322,44 @@ The ** allows us to pass any number of keyword arguments. A keyword argument is 
 <h4>3 main components - scheduler; workers; webserver<a class="headerlink" href="#main-components-scheduler-workers-webserver" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>airflow metastore(database) key component for linkages</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="why-airflow-pros-cons">
+<h3>Why Airflow PROS/CONS<a class="headerlink" href="#why-airflow-pros-cons" title="Permalink to this headline">¶</a></h3>
+<p>o</p>
+<div class="section" id="reasons-to-choose-airflow-in-the-past-sections">
+<h4>Reasons to choose Airflow In the past sections,<a class="headerlink" href="#reasons-to-choose-airflow-in-the-past-sections" title="Permalink to this headline">¶</a></h4>
+<p>we’ve already described several key feature</p>
+<p>s that make Airflow ideal for implementing batch-oriented data pipelines. In summary, these include the following:</p>
+<ul class="simple">
+<li><p>The ability to implement pipelines using Python code allows you to create arbitrarily complex pipelines using anything you can dream up in Python.</p></li>
+<li><p>The Python foundation of Airflow makes it easy to extend and add integrations with many different systems.</p>
+<ul>
+<li><p>In fact, the Airflow community has already developed a rich collection of extensions that allow Airflow to integrate with many different types of databases, cloud services, and so on.</p></li>
+</ul>
+</li>
+<li><p>Rich scheduling semantics allow you to run your pipelines at regular intervals and build efficient pipelines that use incremental processing to avoid expensive recomputation of existing results.</p></li>
+<li><p>Features such as backfilling enable you to easily (re)process historical data, allowing you to recompute any derived data sets after making changes to your code.</p></li>
+<li><p>Airflow’s rich web interface provides an easy view for monitoring the results of your pipeline runs and debugging any failures that may have occurred.</p></li>
+<li><p>Open Source !</p></li>
+<li><p>Famous Company Adoption AIRBNB etc…</p></li>
+</ul>
+</div>
+<div class="section" id="reasons-not-to-choose-airflow">
+<h4>Reasons not to choose Airflow<a class="headerlink" href="#reasons-not-to-choose-airflow" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Not as hood for highly fynamic pipelines</p></li>
+<li><p>Require Python rerxperience</p></li>
+<li><p>I would add the significant technology stack is a barrier - for small teams or silo’ed teams …</p></li>
+</ul>
+<p>de Ruiter, Julian; Harenslak, Bas. Data Pipelines with Apache Airflow (p. 17). Manning. Kindle Edition.</p>
+<p>Airflow consists of three core components:</p>
+<ul class="simple">
+<li><p>the webserver,</p></li>
+<li><p>the scheduler,</p></li>
+<li><p>and the worker processes,
+which work together to schedule tasks from your data pipelines and help you monitor their results.</p></li>
 </ul>
 </div>
 </div>

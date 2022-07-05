@@ -111,3 +111,38 @@ de Ruiter, Julian; Harenslak, Bas. Data Pipelines with Apache Airflow (p. 9). Ma
 #### 3 main components - scheduler; workers; webserver
 
 - airflow metastore(database) key component for linkages
+
+### Why Airflow PROS/CONS
+
+o
+#### Reasons to choose Airflow In the past sections, 
+
+we’ve already described several key feature
+
+s that make Airflow ideal for implementing batch-oriented data pipelines. In summary, these include the following: 
+
+- The ability to implement pipelines using Python code allows you to create arbitrarily complex pipelines using anything you can dream up in Python. 
+- The Python foundation of Airflow makes it easy to extend and add integrations with many different systems. 
+	- In fact, the Airflow community has already developed a rich collection of extensions that allow Airflow to integrate with many different types of databases, cloud services, and so on. 
+- Rich scheduling semantics allow you to run your pipelines at regular intervals and build efficient pipelines that use incremental processing to avoid expensive recomputation of existing results. 
+- Features such as backfilling enable you to easily (re)process historical data, allowing you to recompute any derived data sets after making changes to your code. 
+- Airflow’s rich web interface provides an easy view for monitoring the results of your pipeline runs and debugging any failures that may have occurred.
+
+- Open Source !
+- Famous Company Adoption AIRBNB etc...
+
+
+#### Reasons not to choose Airflow
+
+- Not as hood for highly fynamic pipelines
+- Require Python rerxperience
+- I would add the significant technology stack is a barrier - for small teams or silo'ed teams ...
+
+de Ruiter, Julian; Harenslak, Bas. Data Pipelines with Apache Airflow (p. 17). Manning. Kindle Edition. 
+
+Airflow consists of three core components: 
+- the webserver, 
+- the scheduler, 
+- and the worker processes, 
+which work together to schedule tasks from your data pipelines and help you monitor their results.
+
