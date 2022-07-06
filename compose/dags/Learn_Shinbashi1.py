@@ -26,13 +26,14 @@ with DAG(
     tags=["demo", "shinbashi"],
 ) as dag:
 
-    # s3_work = "{{ var.value.smartflow_s3_work }}/{{ dag.dag_id }}/{{ run_id }}"
-    s3_work = "{{ dag.dag_id }}/{{ run_id }}"
+    #s3_work = "{{ var.value.smartflow_s3_work }}/{{ dag.dag_id }}/{{ run_id }}"
+    #s3_work = "{{ dag.dag_id }}/{{ run_id }}"
+    s3_work = "{{ macros.smartflow.smart_imagery_s3() }}/{{ dag.dag_id }}/{{ run_id }}"
 
     search=[
         {
             "url": "https://earth-search.aws.element84.com/v0",
-            #"intersects": "{{ macros.smartflow.smart_region_aoi(params.region_id) | tojson }}",
+            "intersects": "{{ macros.smartflow.smart_region_aoi(params.region_id) | tojson }}",
             "datetime": "2018-06-01/2018-12-31",
             "query": {"eo:cloud_cover": {"lt": 50}},
             "collections": ["sentinel-s2-l2a-cogs"],
@@ -42,6 +43,7 @@ with DAG(
     aws_conn_id="smartflow_aws_conn"
     #output_loc=f"{s3_work}/stac/items.jsonl"
     my_str = s3_work
+    #my_str = search[0]['intersects']
     fake_search = PythonOperator(
              task_id="Fake_search_sentinel",
              python_callable = my_function,
