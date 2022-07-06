@@ -11,6 +11,7 @@ v2 - Welcome to Airflow Training Tony
    :caption: Contents:
 
    00_overview.md
+   2_env_vars.md
    9_quests.md
    3_engineering_notes.md
 
