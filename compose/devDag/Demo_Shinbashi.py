@@ -11,7 +11,7 @@ from smartflow.utils.constants import REGION_ID_REGEX
 with DAG(
     dag_id="Demo_Shinbashi",
     description="Demo DAG for running Shinbashi",
-    params={"region_id": Param(default="US_R001", type="string", pattern=REGION_ID_REGEX)},
+    params={"region_id": Param(default="US_R113", type="string", pattern=REGION_ID_REGEX)},
     start_date=datetime(2022, 3, 1),
     catchup=False,
     schedule_interval=None,

@@ -33,7 +33,7 @@ with DAG(
     search=[
         {
             "url": "https://earth-search.aws.element84.com/v0",
-            #"intersects": "{{ macros.smartflow.smart_region_aoi(params.region_id) | tojson }}",
+            "intersects": "{{ macros.smartflow.smart_region_aoi(params.region_id) | tojson }}",
             "datetime": "2018-06-01/2018-12-31",
             "query": {"eo:cloud_cover": {"lt": 50}},
             "collections": ["sentinel-s2-l2a-cogs"],
