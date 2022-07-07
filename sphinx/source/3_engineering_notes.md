@@ -61,3 +61,7 @@ docker-compose --profile flower up
 
 - https://airflow.apache.org/docs/apache-airflow/1.10.1/howto/executor/use-celery.html
 
+
+## Just Celery
+
+https://www.youtube.com/watch?v=mcX_4EvYka4
