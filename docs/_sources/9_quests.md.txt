@@ -1,5 +1,14 @@
 # Quests
 
+## 0.0 Understanding Variables
+
+- env variables - set in the container
+	- set ahead of time with docker compose
+- metastore
+	- nav localhost:8080- admin->variables
+	- nav localhost:8080- admin->macros
+- reference https://www.youtube.com/watch?v=bRaMAD5vx3g
+
 
 
 ## 0. Stac Search Task

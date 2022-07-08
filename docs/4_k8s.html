@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Overview &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
+  <title>k8s &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
   
 
   
@@ -34,9 +34,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Env Variables or metastore variables" href="2_env_vars.html" />
-    <link rel="prev" title="v2 - Welcome to Airflow Training Tony" href="index.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,17 +79,17 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#purpose">Purpose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#mission">Mission</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#objectives">Objectives</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#prerequsite-steps">Prerequsite steps</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="00_overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_overview.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_overview.html#mission">Mission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_overview.html#objectives">Objectives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="00_overview.html#prerequsite-steps">Prerequsite steps</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#quests">Quests</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#get-docker-airflow-running-in-chs">Get Docker Airflow Running in CHS</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_overview.html#quests">Quests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="00_overview.html#get-docker-airflow-running-in-chs">Get Docker Airflow Running in CHS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="00_overview.html#references">References</a></li>
 </ul>
 </li>
 </ul>
@@ -188,13 +186,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Overview</li>
+      <li>k8s</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/00_overview.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/4_k8s.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -207,62 +205,60 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="purpose">
-<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
-<p>This project will explore airflow as a workflow manager - used by IARPA/SMART project and potrentially used by EROS for projects such as LCMAP/NLCD.</p>
+  <div class="section" id="k8s">
+<h1>k8s<a class="headerlink" href="#k8s" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="microk8s">
+<h2>microk8s<a class="headerlink" href="#microk8s" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="mission">
-<h2>Mission<a class="headerlink" href="#mission" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Get smart on Airflow</p></li>
-<li><p>Implement sample DAGS</p></li>
-</ol>
+<div class="section" id="k9s">
+<h2>k9s<a class="headerlink" href="#k9s" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="objectives">
-<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Run GAASS-PY as a DAG Flow and contrast this with simple docker (python module) based orchestration</p></li>
-</ol>
-<div class="section" id="prerequsite-steps">
-<h3>Prerequsite steps<a class="headerlink" href="#prerequsite-steps" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>Get airflow running in CHS as a docker-compose cluster of containers</p></li>
-<li><p>Pass compentancy tests such as running our fisrt Shinbashi DAG</p></li>
-<li><p>Explore providers notably:</p>
+<div class="section" id="helm">
+<h2>helm<a class="headerlink" href="#helm" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="jupyter-hub">
+<h2>jupyter hub<a class="headerlink" href="#jupyter-hub" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Celery</p></li>
-<li><p>Kubernetes</p></li>
-</ul>
-</li>
-</ol>
-</div>
-</div>
-<div class="section" id="quests">
-<h2>Quests<a class="headerlink" href="#quests" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="get-docker-airflow-running-in-chs">
-<h3>Get Docker Airflow Running in CHS<a class="headerlink" href="#get-docker-airflow-running-in-chs" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>Create airflow repo GIT</p></li>
-<li><p>Create test machine EC2-instance terraform etc</p></li>
-<li><p>Install Docker</p></li>
-<li><p>Build Docs for web page</p></li>
-<li><p>Start Quest</p></li>
-</ol>
-<div class="section" id="references">
-<h4>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h4>
-<p>https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html</p>
-<ul class="simple">
-<li><p>BOOK:</p>
+<li><p>loadbalancer - explose the port for the hub</p>
 <ul>
-<li><p>Data Pipelines with Apache Airflow</p></li>
-<li><p>by Bas P. Harenslak (Author), Julian Rutger de Ruiter (Author)</p></li>
+<li><p>microk8s kubectl patch svc proxy-public -n jhub -p ‘{“spec”: {“type”: “LoadBalancer”, “externalIPs”:[“10.12.69.80”]}}’</p></li>
 </ul>
 </li>
 </ul>
 </div>
-</div>
+<div class="section" id="airflow-via-helm">
+<h2>airflow via helm<a class="headerlink" href="#airflow-via-helm" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>https://vinayak.io/2020/09/10/day-24-jupyterhub-airflow-microk8s/</p></li>
+<li><p>install snapd on amazon linux</p></li>
+<li><p>install microk8s</p>
+<ul>
+<li><p>$ sudo snap install microk8s –classic</p></li>
+</ul>
+</li>
+<li><p>create namespace</p>
+<ul>
+<li><p>microk8s kubectl create namespace jhub</p></li>
+</ul>
+</li>
+<li><p>enable helm</p>
+<ul>
+<li><p>microk8s enable helm3</p></li>
+</ul>
+</li>
+<li><p>add jupyter hub repo to helm</p>
+<ul>
+<li><p>microk8s helm3 repo add jupyterhub https://jupyterhub.github.io/helm-chart</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>microk8s helm3 repo update</p></li>
+<li><p>RELEASE=jhub NAMESPACE=jhub microk8s helm3 upgrade –cleanup-on-fail –install $RELEASE jupyterhub/jupyterhub \
+–namespace $NAMESPACE –version=0.9.0 –values values.yml</p></li>
+</ul>
+</li>
+<li><p>microk8s helm3 –debug upgrade –install jupyterhub jupyterhub/jupyterhub –namespace jhub</p></li>
+</ul>
 </div>
 </div>
 
@@ -271,15 +267,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="2_env_vars.html" class="btn btn-neutral float-right" title="Env Variables or metastore variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="index.html" class="btn btn-neutral float-left" title="v2 - Welcome to Airflow Training Tony" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
