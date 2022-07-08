@@ -1,33 +1,65 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-    <script src="../_static/js/theme.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lidar in the CHS AWS Cloud &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
+          
+
+          
             <a href="../index.html" class="icon icon-home"> Airflow Sandbox Training in the cloud
+          
+
+          
           </a>
+
+          
+            
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -35,222 +67,414 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01_tasks.html">Tasks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../01_tasks.html#cleanup-smartflow-ec2-instance-butzer-eccoe-smartflow">Cleanup smartflow ec2 instance butzer-eccoe-smartflow</a></li>
 </ul>
-</div>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../4_k8s.html">k8s</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#book-learning-kubernetes">Book Learning Kubernetes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#terminology">Terminology</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#microk8s">microk8s</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#startup-and-shutdown">Startup and shutdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#dashboard">Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#k9s">k9s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#helm">helm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#jupyter-hub">jupyter hub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#pvc-and-pv-notes-tbd">PVC and PV notes - tbd</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#airflow-via-helm">airflow via helm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#videos">videos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../00_overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#mission">Mission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#objectives">Objectives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../00_overview.html#prerequsite-steps">Prerequsite steps</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#quests">Quests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../00_overview.html#get-docker-airflow-running-in-chs">Get Docker Airflow Running in CHS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../00_overview.html#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_env_vars.html">Env Variables or metastore variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_env_vars.html#todo">Todo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../9_quests.html">Quests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../9_quests.html#understanding-variables">0.0 Understanding Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../9_quests.html#stac-search-task">0. Stac Search Task</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#building-the-docker-smartflow">Building the Docker smartflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#issue">ISSUE:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#docker-compose-trial-airflow-celery">Docker Compose Trial Airflow - Celery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#quickstart">Quickstart</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../9_quests.html#airflow-study">1 Airflow Study</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#prerequisites-args-and-kwargs">Prerequisites *args and *kwargs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#getting-started">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#introducing-airflow">Introducing Airflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#main-components-scheduler-workers-webserver">3 main components - scheduler; workers; webserver</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#why-airflow-pros-cons">Why Airflow PROS/CONS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#reasons-to-choose-airflow-in-the-past-sections">Reasons to choose Airflow In the past sections,</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#reasons-not-to-choose-airflow">Reasons not to choose Airflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_engineering_notes.html">Engineering Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_engineering_notes.html#smartflow-references">smartflow references</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#airflow-tutorial-videos-document-good-to-bad">Airflow Tutorial Videos - document good to bad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#airflow-operators">Airflow Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#running-airflow-with-docker-compose">Running Airflow with Docker Compose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#docker-simple-orcherstration-python-docker-starts">Docker Simple Orcherstration - python docker starts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_engineering_notes.html#rylie-notes">Rylie Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#airflow-scaling-celery">Airflow Scaling Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#just-celery">Just Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#terraform">Terraform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#troubleshooting">TroubleShooting</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Airflow Sandbox Training in the cloud</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Lidar in the CHS AWS Cloud</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+            
             <a href="../_sources/Attic/00define_lidar.md.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <p>—
-&lt;u&gt;DRAFT&lt;/u&gt;
-<cite>DRAFT</cite></p>
-<p># Lidar in the CHS AWS Cloud</p>
-<p>![lidar](<a class="reference external" href="https://www.geoilenergy.com/images/solucionesGeomatica/servicios/em/g2.gif">https://www.geoilenergy.com/images/solucionesGeomatica/servicios/em/g2.gif</a>)</p>
-<p>## Executive Summary</p>
-<p>#### You really should be using the cloud.
-- I can help you with all the details.
-- Let’s get started!</p>
-<p>### Deliverables
-- Visualizations
-- Scalable Processing Pipelines for
-- A repository of very useful jupyter notebooks and libraries
-- A refined, SMALL, list of winning technologies that accelerate science and cool decision fatigue fever.
-- A model recipe, “HowTo/TL;DR” path for moving to the cloud - likely rapidly.</p>
-<p>## Introduction</p>
-<p>&gt; The purpose of this effort</p>
-<p>&gt; A secondary purpose is to promote the concept of shared science and shared data using the PANGEO reference architecture</p>
-<p>&gt; There are many tertiary goals for this project hinted at in the pages of this document/web-page.</p>
-<p>This document is organized as follows:
-1. not really organized at this point</p>
-<p><strong>Disclaimer</strong>
-- <cite>This document is a rough work-in-progress drafty draft</cite>
-- I expect to sand off some of the rough edges based on the actual facts from my colleagues</p>
-<p>## Background</p>
+            
+  <hr class="docutils" />
+<p><u>DRAFT</u>
+<code class="docutils literal notranslate"><span class="pre">DRAFT</span></code></p>
+<div class="section" id="lidar-in-the-chs-aws-cloud">
+<h1>Lidar in the CHS AWS Cloud<a class="headerlink" href="#lidar-in-the-chs-aws-cloud" title="Permalink to this headline">¶</a></h1>
+<p><img alt="lidar" src="https://www.geoilenergy.com/images/solucionesGeomatica/servicios/em/g2.gif" /></p>
+<div class="section" id="executive-summary">
+<h2>Executive Summary<a class="headerlink" href="#executive-summary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="you-really-should-be-using-the-cloud">
+<h3>You really should be using the cloud.<a class="headerlink" href="#you-really-should-be-using-the-cloud" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>I can help you with all the details.</p></li>
+<li><p>Let’s get started!</p></li>
+</ul>
+</div>
+<div class="section" id="deliverables">
+<h3>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Visualizations</p></li>
+<li><p>Scalable Processing Pipelines for</p></li>
+<li><p>A repository of very useful jupyter notebooks and libraries</p></li>
+<li><p>A refined, SMALL, list of winning technologies that accelerate science and cool decision fatigue fever.</p></li>
+<li><p>A model recipe, “HowTo/TL;DR” path for moving to the cloud - likely rapidly.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>The purpose of this effort</p>
+</div></blockquote>
+<blockquote>
+<div><p>A secondary purpose is to promote the concept of shared science and shared data using the PANGEO reference architecture</p>
+</div></blockquote>
+<blockquote>
+<div><p>There are many tertiary goals for this project hinted at in the pages of this document/web-page.</p>
+</div></blockquote>
+<p>This document is organized as follows:</p>
+<ol class="simple">
+<li><p>not really organized at this point</p></li>
+</ol>
+<p><strong>Disclaimer</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">document</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">rough</span> <span class="pre">work-in-progress</span> <span class="pre">drafty</span> <span class="pre">draft</span></code></p></li>
+<li><p>I expect to sand off some of the rough edges based on the actual facts from my colleagues</p></li>
+</ul>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
 <p>My name is Tony Butzer and I work with the Open Data Cube and PANGEO communities to help make science easy and fun.</p>
 <p>I just completed 9 month project to move the EvapoTranspiration VegET model from on-prem desktops to the cloud.
 This team was pleased with the performance improvements afforded by AWS S3. However; there is still much work to do on all of our parts to make the PANGEO experience useful to a broad class of scientific needs.</p>
 <p>I want to build relationships with the science teams and help understand and fill any gaps in the PANGEO solution.</p>
 <p>This LiDAR effort is one of many of my projects wanting to leverage the cloud without getting bogged down in the jargon and minutia.</p>
-<p>## Scientists will rule the world</p>
-<p>&gt; For a few years now, I have been saying that compute is free for those who have a viable science model.</p>
+</div>
+<div class="section" id="scientists-will-rule-the-world">
+<h2>Scientists will rule the world<a class="headerlink" href="#scientists-will-rule-the-world" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>For a few years now, I have been saying that compute is free for those who have a viable science model.</p>
+</div></blockquote>
 <p>Most people look at me like I am crazy when I say this.</p>
-<p>## Expected Audience</p>
+</div>
+<div class="section" id="expected-audience">
+<h2>Expected Audience<a class="headerlink" href="#expected-audience" title="Permalink to this headline">¶</a></h2>
 <p>The LiDAR Project Team
-![](./Assets/lidar_team.png)</p>
-<p>![](<a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/0/0e/Lidar_P1270901.jpg">https://upload.wikimedia.org/wikipedia/commons/0/0e/Lidar_P1270901.jpg</a>)</p>
-<p>—
-# Vision</p>
+<img alt="Attic/./Assets/lidar_team.png" src="Attic/./Assets/lidar_team.png" /></p>
+<p><img alt="https://upload.wikimedia.org/wikipedia/commons/0/0e/Lidar_P1270901.jpg" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Lidar_P1270901.jpg" /></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="vision">
+<h1>Vision<a class="headerlink" href="#vision" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>Demonstrate PANGEO and or CHS/AWS Architectures via practical science case studies; in this case LiDAR.</p></li>
 <li><p>Document AWS open source python tools for science</p></li>
-<li><dl class="simple">
-<dt>Move LiDAR from personal “dark” repositories - to ubiquitous high perfromance cloud storage juxtiposed to compute.</dt><dd><ul>
+<li><p>Move LiDAR from personal “dark” repositories - to ubiquitous high perfromance cloud storage juxtiposed to compute.</p>
+<ul>
 <li><p>Move the scietist to the data - not the data to some lithium battery powered laptop.</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p>—
-## Computers and Website</p>
-<p>A compute/computer/ec2/instance in the cloud is the same as a computer in EROS’s CR2!
-- let me say that again</p>
-<blockquote>
-<div><ul class="simple">
+<hr class="docutils" />
+<div class="section" id="computers-and-website">
+<h2>Computers and Website<a class="headerlink" href="#computers-and-website" title="Permalink to this headline">¶</a></h2>
+<p>A compute/computer/ec2/instance in the cloud is the same as a computer in EROS’s CR2!</p>
+<ul class="simple">
+<li><p>let me say that again</p>
+<ul>
 <li><p>A computer in the cloud is the <strong>SAME</strong> as a computer in EROS’s CR2!</p></li>
 <li><p>linux is linux wherever it swims</p></li>
 </ul>
-</div></blockquote>
-<p>## AWS Pangeo</p>
+</li>
+</ul>
+</div>
+<div class="section" id="aws-pangeo">
+<h2>AWS Pangeo<a class="headerlink" href="#aws-pangeo" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>this work was spawned from the Open Data Cube work and sandbox/workshops - conducted here:</p></li>
-<li><p><a class="reference external" href="https://tonybutzer.github.io/harmony-docs/">https://tonybutzer.github.io/harmony-docs/</a></p></li>
+<li><p>https://tonybutzer.github.io/harmony-docs/</p></li>
 </ul>
-<p>—</p>
-<p>—
-## Human Resources</p>
-<p>### List for now - needs work</p>
-<p>—
-## github</p>
+<hr class="docutils" />
+</div>
+<hr class="docutils" />
+<div class="section" id="human-resources">
+<h2>Human Resources<a class="headerlink" href="#human-resources" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="list-for-now-needs-work">
+<h3>List for now - needs work<a class="headerlink" href="#list-for-now-needs-work" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="github">
+<h2>github<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/tonybutzer/ajit">https://github.com/tonybutzer/ajit</a></p></li>
-<li><p><a class="reference external" href="https://tonybutzer.github.io/ajit/">https://tonybutzer.github.io/ajit/</a></p></li>
+<li><p>https://github.com/tonybutzer/ajit</p></li>
+<li><p>https://tonybutzer.github.io/ajit/</p></li>
 </ul>
-<p>### Where are my assets?
-### Makefiles and Dockerfiles
-&lt;img src=”<a class="reference external" href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png</a>” width=”200”&gt;</p>
-<p>—</p>
-<p>—
-# Overview</p>
+<div class="section" id="where-are-my-assets">
+<h3>Where are my assets?<a class="headerlink" href="#where-are-my-assets" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="makefiles-and-dockerfiles">
+<h3>Makefiles and Dockerfiles<a class="headerlink" href="#makefiles-and-dockerfiles" title="Permalink to this headline">¶</a></h3>
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="200"><hr class="docutils" />
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>Project Initiation and Setup</p></li>
 <li><p>LiDAR exploration</p></li>
-<li><dl class="simple">
-<dt>Infrastucture</dt><dd><ul>
-<li><dl class="simple">
-<dt>S3 object storage - AWS</dt><dd><ul>
+<li><p>Infrastucture</p>
+<ul>
+<li><p>S3 object storage - AWS</p>
+<ul>
 <li><p>assessment</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt>Compute</dt><dd><ul>
+<li><p>Compute</p>
+<ul>
 <li><p>EC2 - AWS</p></li>
 <li><p>pangeo.chs.usgs.gov - ??</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-</dd>
-</dl>
 </li>
 <li><p>Cloud Differences</p></li>
 <li><p>Cloud Similarities</p></li>
 <li><p>Cloud Advantages</p></li>
 <li><p>Cloud Disadvantages</p></li>
-<li><dl class="simple">
-<dt>Data Wrangling</dt><dd><ul>
+<li><p>Data Wrangling</p>
+<ul>
 <li><p>ssh</p></li>
 <li><p>scp</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt>Project Specific Specialities</dt><dd><ul>
+<li><p>Project Specific Specialities</p>
+<ul>
 <li><p>Collab vs. Jupyter/PANGEO</p></li>
 <li><p>SageMaker and ML</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p>—</p>
-<p>### Science with a chromebook
-. A used chromebook
-![](./Assets/used_chromebook.PNG)</p>
-<p>&lt;img src=”<a class="reference external" href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png</a>” width=”200”&gt;</p>
-<p>—</p>
+<hr class="docutils" />
+<div class="section" id="science-with-a-chromebook">
+<h2>Science with a chromebook<a class="headerlink" href="#science-with-a-chromebook" title="Permalink to this headline">¶</a></h2>
+<p>. A used chromebook
+<img alt="Attic/./Assets/used_chromebook.PNG" src="Attic/./Assets/used_chromebook.PNG" /></p>
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="200"><hr class="docutils" />
 <ul class="simple">
 <li><p>a chromebook and the right github repo is worth $200,000 a year.</p></li>
 </ul>
-<p>## Instructors by Example
-- Ryan Abernathey - PANGEO
-- Chris Holmes - COGS and STAC
-- Matt Hansen - STAC
-- Scott Henderson - Landsat and Sentinel Jupyter Examples</p>
-<p>## References</p>
+</div>
+<div class="section" id="instructors-by-example">
+<h2>Instructors by Example<a class="headerlink" href="#instructors-by-example" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://lpdaac.usgs.gov/resources/e-learning/">https://lpdaac.usgs.gov/resources/e-learning/</a></p></li>
-<li><p><a class="reference external" href="https://registry.opendata.aws/landsat-8/">https://registry.opendata.aws/landsat-8/</a></p></li>
-<li><p><a class="reference external" href="https://docs.opendata.aws/landsat-pds/readme.html">https://docs.opendata.aws/landsat-pds/readme.html</a></p></li>
-<li><p><a class="reference external" href="https://corteva.github.io/rioxarray/stable/examples/clip_box.html">https://corteva.github.io/rioxarray/stable/examples/clip_box.html</a></p></li>
-<li><p><a class="reference external" href="https://corteva.github.io/rioxarray/stable/examples/convert_to_raster.html">https://corteva.github.io/rioxarray/stable/examples/convert_to_raster.html</a></p></li>
-<li><p><a class="reference external" href="https://www.usgs.gov/core-science-systems/nli/landsat">https://www.usgs.gov/core-science-systems/nli/landsat</a></p></li>
-<li><p><a class="reference external" href="https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2">https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2</a></p></li>
+<li><p>Ryan Abernathey - PANGEO</p></li>
+<li><p>Chris Holmes - COGS and STAC</p></li>
+<li><p>Matt Hansen - STAC</p></li>
+<li><p>Scott Henderson - Landsat and Sentinel Jupyter Examples</p></li>
 </ul>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
-sponsors=[‘Pete Doucette’, ‘Doug Jaton’, ‘Steve LaBahn’, ‘Gabriel Senay’]
-my_class=’Tonys Pangeo Useful School’</p>
-<dl class="simple">
-<dt>if ‘Useful’ in my_class:</dt><dd><p>send_thankyou_email(sponsors)</p>
-</dd>
-<dt>else:</dt><dd><p>pass</p>
-</dd>
-</dl>
-<p><a href="#id3"><span class="problematic" id="id4">``</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>https://lpdaac.usgs.gov/resources/e-learning/</p></li>
+<li><p>https://registry.opendata.aws/landsat-8/</p></li>
+<li><p>https://docs.opendata.aws/landsat-pds/readme.html</p></li>
+<li><p>https://corteva.github.io/rioxarray/stable/examples/clip_box.html</p></li>
+<li><p>https://corteva.github.io/rioxarray/stable/examples/convert_to_raster.html</p></li>
+<li><p>https://www.usgs.gov/core-science-systems/nli/landsat</p></li>
+<li><p>https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sponsors</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Pete Doucette&#39;</span><span class="p">,</span> <span class="s1">&#39;Doug Jaton&#39;</span><span class="p">,</span> <span class="s1">&#39;Steve LaBahn&#39;</span><span class="p">,</span> <span class="s1">&#39;Gabriel Senay&#39;</span><span class="p">]</span>
+<span class="n">my_class</span><span class="o">=</span><span class="s1">&#39;Tonys Pangeo Useful School&#39;</span>
+
+<span class="k">if</span> <span class="s1">&#39;Useful&#39;</span> <span class="ow">in</span> <span class="n">my_class</span><span class="p">:</span>
+	<span class="n">send_thankyou_email</span><span class="p">(</span><span class="n">sponsors</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+</div>
 
 
            </div>
+           
           </div>
           <footer>
+  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Tony Butzer.</p>
-  </div>
+    <p>
+        &copy; Copyright 2022, Tony Butzer
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
+
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

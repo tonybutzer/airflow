@@ -1,33 +1,65 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-    <script src="../_static/js/theme.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LiDAR &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
+          
+
+          
             <a href="../index.html" class="icon icon-home"> Airflow Sandbox Training in the cloud
+          
+
+          
           </a>
+
+          
+            
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -35,336 +67,523 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01_tasks.html">Tasks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../01_tasks.html#cleanup-smartflow-ec2-instance-butzer-eccoe-smartflow">Cleanup smartflow ec2 instance butzer-eccoe-smartflow</a></li>
 </ul>
-</div>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../4_k8s.html">k8s</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#book-learning-kubernetes">Book Learning Kubernetes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#terminology">Terminology</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#microk8s">microk8s</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#startup-and-shutdown">Startup and shutdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#dashboard">Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#k9s">k9s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#helm">helm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#jupyter-hub">jupyter hub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#pvc-and-pv-notes-tbd">PVC and PV notes - tbd</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#airflow-via-helm">airflow via helm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#videos">videos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../00_overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#mission">Mission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#objectives">Objectives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../00_overview.html#prerequsite-steps">Prerequsite steps</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#quests">Quests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../00_overview.html#get-docker-airflow-running-in-chs">Get Docker Airflow Running in CHS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../00_overview.html#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_env_vars.html">Env Variables or metastore variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_env_vars.html#todo">Todo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../9_quests.html">Quests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../9_quests.html#understanding-variables">0.0 Understanding Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../9_quests.html#stac-search-task">0. Stac Search Task</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#building-the-docker-smartflow">Building the Docker smartflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#issue">ISSUE:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#docker-compose-trial-airflow-celery">Docker Compose Trial Airflow - Celery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#quickstart">Quickstart</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../9_quests.html#airflow-study">1 Airflow Study</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#prerequisites-args-and-kwargs">Prerequisites *args and *kwargs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#getting-started">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#introducing-airflow">Introducing Airflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#main-components-scheduler-workers-webserver">3 main components - scheduler; workers; webserver</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#why-airflow-pros-cons">Why Airflow PROS/CONS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#reasons-to-choose-airflow-in-the-past-sections">Reasons to choose Airflow In the past sections,</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#reasons-not-to-choose-airflow">Reasons not to choose Airflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_engineering_notes.html">Engineering Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_engineering_notes.html#smartflow-references">smartflow references</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#airflow-tutorial-videos-document-good-to-bad">Airflow Tutorial Videos - document good to bad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#airflow-operators">Airflow Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#running-airflow-with-docker-compose">Running Airflow with Docker Compose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#docker-simple-orcherstration-python-docker-starts">Docker Simple Orcherstration - python docker starts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../3_engineering_notes.html#rylie-notes">Rylie Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#airflow-scaling-celery">Airflow Scaling Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#just-celery">Just Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#terraform">Terraform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#troubleshooting">TroubleShooting</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Airflow Sandbox Training in the cloud</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>LiDAR</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+            
             <a href="../_sources/Attic/1_Engineering_Notebook.md.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <p># LiDAR</p>
+            
+  <div class="section" id="lidar">
+<h1>LiDAR<a class="headerlink" href="#lidar" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Lidar">https://en.wikipedia.org/wiki/Lidar</a></p></li>
+<li><p>https://en.wikipedia.org/wiki/Lidar</p></li>
 </ul>
-<p># What’s New</p>
-<p>## PotreeConverter</p>
+</div>
+<div class="section" id="what-s-new">
+<h1>What’s New<a class="headerlink" href="#what-s-new" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="potreeconverter">
+<h2>PotreeConverter<a class="headerlink" href="#potreeconverter" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/potree/PotreeConverter">https://github.com/potree/PotreeConverter</a></p></li>
+<li><p>https://github.com/potree/PotreeConverter</p></li>
 </ul>
-<p>## Ajit examples</p>
-<p># PDAL</p>
+</div>
+<div class="section" id="ajit-examples">
+<h2>Ajit examples<a class="headerlink" href="#ajit-examples" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="pdal">
+<h1>PDAL<a class="headerlink" href="#pdal" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>conda install -c conda-forge pdal python-pdal gdal</p></li>
 </ul>
-<p>#### March 2022</p>
+<div class="section" id="march-2022">
+<h2>March 2022<a class="headerlink" href="#march-2022" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><dl class="simple">
-<dt>Exploring USGS LiDAR with STAC info</dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/tonybutzer/ajit/blob/main/experiments/3dep/notebooks/notebooks/90_aws_lidar_3dep_basics_stac.ipynb">https://github.com/tonybutzer/ajit/blob/main/experiments/3dep/notebooks/notebooks/90_aws_lidar_3dep_basics_stac.ipynb</a></p></li>
+<li><p>Exploring USGS LiDAR with STAC info</p>
+<ul>
+<li><p>https://github.com/tonybutzer/ajit/blob/main/experiments/3dep/notebooks/notebooks/90_aws_lidar_3dep_basics_stac.ipynb</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt>Where on earth is ajits data from the bucket - plus .gitignore files</dt><dd><ul>
-<li><p><a class="reference external" href="https://github.com/tonybutzer/ajit/blob/main/experiments/3dep/notebooks/notebooks/89_ajit_data_in_s3.ipynb">https://github.com/tonybutzer/ajit/blob/main/experiments/3dep/notebooks/notebooks/89_ajit_data_in_s3.ipynb</a></p></li>
+<li><p>Where on earth is ajits data from the bucket - plus .gitignore files</p>
+<ul>
+<li><p>https://github.com/tonybutzer/ajit/blob/main/experiments/3dep/notebooks/notebooks/89_ajit_data_in_s3.ipynb</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p>## Experiments</p>
-<p>### Viewing Data With the Potree Viewer</p>
+</div>
+<div class="section" id="experiments">
+<h2>Experiments<a class="headerlink" href="#experiments" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="viewing-data-with-the-potree-viewer">
+<h3>Viewing Data With the Potree Viewer<a class="headerlink" href="#viewing-data-with-the-potree-viewer" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><dl class="simple">
-<dt>general notes</dt><dd><ul>
+<li><p>general notes</p>
+<ul>
 <li><p>using prebuild containers for creating entwine trees</p></li>
 <li><p>using prebuilt container for potree viewer withpointer to localhost:8080</p></li>
 <li><p>using an ssh tunnel for 8080 so that localhost:8080 is a valid tree</p></li>
 <li><p>usgs-lidar is a REQUESTER PAYS BUCKET - its in us-west-2</p></li>
-<li><p><a class="reference external" href="https://github.com/hobu/usgs-lidar/">https://github.com/hobu/usgs-lidar/</a></p></li>
+<li><p>https://github.com/hobu/usgs-lidar/</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p>### <a class="reference external" href="https://github.com/hobu/usgs-lidar/">https://github.com/hobu/usgs-lidar/</a>
-- read this first</p>
+</div>
+<div class="section" id="https-github-com-hobu-usgs-lidar">
+<h3>https://github.com/hobu/usgs-lidar/<a class="headerlink" href="#https-github-com-hobu-usgs-lidar" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
+<li><p>read this first</p></li>
 <li><p>specifics conversion</p></li>
-<li><dl class="simple">
-<dt>specifics display</dt><dd><ul>
+<li><p>specifics display</p>
+<ul>
 <li><p>see below</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 <li><p>need a potree users guide</p></li>
-<li><dl class="simple">
-<dt>the big viewer - not as satisfying</dt><dd><ul>
-<li><p><a class="reference external" href="https://usgs.entwine.io/data/view.html?r=%22https://s3-us-west-2.amazonaws.com/usgs-lidar-public/SD_Yankton_County_2012%22">https://usgs.entwine.io/data/view.html?r=%22https://s3-us-west-2.amazonaws.com/usgs-lidar-public/SD_Yankton_County_2012%22</a></p></li>
+<li><p>the big viewer - not as satisfying</p>
+<ul>
+<li><p>https://usgs.entwine.io/data/view.html?r=%22https://s3-us-west-2.amazonaws.com/usgs-lidar-public/SD_Yankton_County_2012%22</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p>#### Cool Notes from Readme</p>
+<div class="section" id="cool-notes-from-readme">
+<h4>Cool Notes from Readme<a class="headerlink" href="#cool-notes-from-readme" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/connormanning/entwine">https://github.com/connormanning/entwine</a></p></li>
+<li><p>https://github.com/connormanning/entwine</p></li>
 </ul>
 <p>Getting started with Entwine is easy with Docker. First, we can index some publi
 c data:</p>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
-mkdir ~/entwine
-docker run -it -v ~/entwine:/entwine connormanning/entwine build </p>
-<blockquote>
-<div><p>-i <a class="reference external" href="https://data.entwine.io/red-rocks.laz">https://data.entwine.io/red-rocks.laz</a> -o /entwine/red-rocks</p>
-</div></blockquote>
-<p><a href="#id3"><span class="problematic" id="id4">``</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">~/</span><span class="n">entwine</span>
+<span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="o">-</span><span class="n">v</span> <span class="o">~/</span><span class="n">entwine</span><span class="p">:</span><span class="o">/</span><span class="n">entwine</span> <span class="n">connormanning</span><span class="o">/</span><span class="n">entwine</span> <span class="n">build</span> \
+    <span class="o">-</span><span class="n">i</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">data</span><span class="o">.</span><span class="n">entwine</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">red</span><span class="o">-</span><span class="n">rocks</span><span class="o">.</span><span class="n">laz</span> \
+    <span class="o">-</span><span class="n">o</span> <span class="o">/</span><span class="n">entwine</span><span class="o">/</span><span class="n">red</span><span class="o">-</span><span class="n">rocks</span>
+</pre></div>
+</div>
 <p>Now we have our output at ~/entwine/red-rocks. We could have also passed a direc
-tory like -i ~/county-data/ to index multiple files. Now we can statically serve</p>
-<blockquote>
-<div><p>~/entwine with a simple HTTP server:</p>
-</div></blockquote>
-<p>#### Http server - don’t forget the tunnel
-<code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-it</span> <span class="pre">-v</span> <span class="pre">~/entwine:/var/www</span> <span class="pre">-p</span> <span class="pre">8080:8080</span> <span class="pre">connormanning/http-server</span>
-<span class="pre">`</span></code></p>
+tory like -i ~/county-data/ to index multiple files. Now we can statically serve
+~/entwine with a simple HTTP server:</p>
+</div>
+<div class="section" id="http-server-don-t-forget-the-tunnel">
+<h4>Http server - don’t forget the tunnel<a class="headerlink" href="#http-server-don-t-forget-the-tunnel" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="o">-</span><span class="n">v</span> <span class="o">~/</span><span class="n">entwine</span><span class="p">:</span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span> <span class="o">-</span><span class="n">p</span> <span class="mi">8080</span><span class="p">:</span><span class="mi">8080</span> <span class="n">connormanning</span><span class="o">/</span><span class="n">http</span><span class="o">-</span><span class="n">server</span>
+</pre></div>
+</div>
 <p>And view the data with Potree and Plasio.</p>
-<p>### potree docker image</p>
-<p>### 3DEP - conda based docker image - demo
-- <strong>base container</strong>
-- application container
-- bucket scraper
-- STAC json scraper
-- simple panel app prototypes</p>
-<p>### rclone testing from tallgrass:/caldera –&gt; eccoe-lidar (s3 bucket)</p>
-<p>### example</p>
-<p><a href="#id7"><span class="problematic" id="id8">``</span></a>`
-(lidarV2) [<a class="reference external" href="mailto:ec2-user&#37;&#52;&#48;ip-10-12-69-95">ec2-user<span>&#64;</span>ip-10-12-69-95</a> ~]$ aws s3 ls s3://eccoe-lidar/ajit/
-2022-03-06 17:54:05  137136235 HT404_1580305001_1264340300747572_1.las</p>
-<blockquote>
-<div><p>aws s3 sync data s3://eccoe-lidar/</p>
-</div></blockquote>
-<p>upload: data/ajit/HT404_1580305001_1264340300747572_1.las to s3://eccoe-lidar/ajit/HT404_1580305001_1264340300747572_1.las</p>
-<dl class="simple">
-<dt>(lidarV2) [<a class="reference external" href="mailto:ec2-user&#37;&#52;&#48;ip-10-12-69-95">ec2-user<span>&#64;</span>ip-10-12-69-95</a> ~]$ history | grep scp</dt><dd><p>338  lscpu
-637  scp <a class="reference external" href="mailto:butzer&#37;&#52;&#48;tallgrass&#46;cr&#46;usgs&#46;gov">butzer<span>&#64;</span>tallgrass<span>&#46;</span>cr<span>&#46;</span>usgs<span>&#46;</span>gov</a>:/caldera/projects/usgs/water/impd/butzer/* .
-654  history | grep scp</p>
-</dd>
-</dl>
-<p><a href="#id9"><span class="problematic" id="id10">``</span></a><a href="#id11"><span class="problematic" id="id12">`</span></a></p>
+</div>
+</div>
+<div class="section" id="potree-docker-image">
+<h3>potree docker image<a class="headerlink" href="#potree-docker-image" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="dep-conda-based-docker-image-demo">
+<h3>3DEP - conda based docker image - demo<a class="headerlink" href="#dep-conda-based-docker-image-demo" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><dl class="simple">
-<dt>working on command line ways to visualize LiDAR files and objects</dt><dd><ul>
+<li><p><strong>base container</strong></p></li>
+<li><p>application container</p></li>
+<li><p>bucket scraper</p></li>
+<li><p>STAC json scraper</p></li>
+<li><p>simple panel app prototypes</p></li>
+</ul>
+</div>
+<div class="section" id="rclone-testing-from-tallgrass-caldera-eccoe-lidar-s3-bucket">
+<h3>rclone testing from tallgrass:/caldera –&gt; eccoe-lidar (s3 bucket)<a class="headerlink" href="#rclone-testing-from-tallgrass-caldera-eccoe-lidar-s3-bucket" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="example">
+<h3>example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(lidarV2) [ec2-user@ip-10-12-69-95 ~]$ aws s3 ls s3://eccoe-lidar/ajit/
+2022-03-06 17:54:05  137136235 HT404_1580305001_1264340300747572_1.las
+
+ aws s3 sync data s3://eccoe-lidar/
+upload: data/ajit/HT404_1580305001_1264340300747572_1.las to s3://eccoe-lidar/ajit/HT404_1580305001_1264340300747572_1.las
+
+(lidarV2) [ec2-user@ip-10-12-69-95 ~]$ history | grep scp
+  338  lscpu
+  637  scp butzer@tallgrass.cr.usgs.gov:/caldera/projects/usgs/water/impd/butzer/* .
+  654  history | grep scp
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>working on command line ways to visualize LiDAR files and objects</p>
+<ul>
 <li><p>lastools - compiling the gcc to create Linux binaries in a container</p></li>
 <li><p>lastools - with Windows <em>.exe</em> files using wine in a docker container - cool maybe</p></li>
 <li><p>lastools capabilities</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p>## wine version
-- <a class="reference external" href="https://github.com/hawkaa/docker-lastools/blob/master/Dockerfile">https://github.com/hawkaa/docker-lastools/blob/master/Dockerfile</a></p>
-<p># Conversions Reprojecting Decimating</p>
+</div>
+</div>
+<div class="section" id="wine-version">
+<h2>wine version<a class="headerlink" href="#wine-version" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>https://github.com/hawkaa/docker-lastools/blob/master/Dockerfile</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="conversions-reprojecting-decimating">
+<h1>Conversions Reprojecting Decimating<a class="headerlink" href="#conversions-reprojecting-decimating" title="Permalink to this headline">¶</a></h1>
 <ul>
-<li><p><a class="reference external" href="https://www.cs.unc.edu/~isenburg/lastools/download/las2las_README.txt">https://www.cs.unc.edu/~isenburg/lastools/download/las2las_README.txt</a></p>
-<blockquote>
-<div><ul class="simple">
-<li></li>
-</ul>
-</div></blockquote>
+<li><p>https://www.cs.unc.edu/~isenburg/lastools/download/las2las_README.txt</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="o">-</span> 
+</pre></div>
+</div>
 </li>
 </ul>
-<p>### lastools
-- [](<a class="reference external" href="http://lastools.org/">http://lastools.org/</a>)</p>
+<div class="section" id="lastools">
+<h2>lastools<a class="headerlink" href="#lastools" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><dl class="simple">
-<dt>short list for now</dt><dd><ul>
-<li><p><strong>lasinfo</strong>   prints out an overview of the contents of a LAS/LAZ file</p></li>
-<li><p><strong>laszip</strong>    powerful, lossless LiDAR compressor that turns large LAS files into much smaller LAZ files that are only 7 - 20 percent of the original file size</p></li>
-<li><p>__lasboundary__       computes a boundary polygon</p></li>
+<li><p><a class="reference external" href="http://lastools.org/"></a></p></li>
+<li><p>short list for now</p>
+<ul>
+<li><p><strong>lasinfo</strong>	prints out an overview of the contents of a LAS/LAZ file</p></li>
+<li><p><strong>laszip</strong>	powerful, lossless LiDAR compressor that turns large LAS files into much smaller LAZ files that are only 7 - 20 percent of the original file size</p></li>
+<li><p><strong>lasboundary</strong>	computes a boundary polygon</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt>full list</dt><dd><ul>
-<li><p>laszip        powerful, lossless LiDAR compressor that turns large LAS files into much smaller LAZ files that are only 7 - 20 percent of the original file size</p></li>
-<li><p>lastile       creates a tiling of LAS/LAZ files</p></li>
-<li><p>lassort       z-orders LAS/LAZ files</p></li>
-<li><p>lasclip       clips away points falling into polygonal shapes (e.g. building footprints)</p></li>
-<li><p>txt2las       converts LiDAR from standard ASCII to LAS/LAZ</p></li>
-<li><p>las2txt       turns LAS/LAZ into human-readable and easy-to-parse text</p></li>
-<li><p>lasinfo       prints out an overview of the contents of a LAS/LAZ file</p></li>
-<li><p>las2shp       turns LAS/LAZ into ESRI’s Shapefile format</p></li>
-<li><p>shp2las       turns an ESRI’s Shapefile into LAS/LAZ</p></li>
-<li><p>lasmerge      can merge several LAS/LAZ files into one</p></li>
-<li><p>e572las       extracts the points from the E57 format and stores them as LAS/LAZ files</p></li>
-<li><p>las2las       filters, transforms, subsamples, clips, thins, …</p></li>
-<li><p>lasthin       implements a simple point thinning algorithm</p></li>
-<li><p>las2tin       triangulates the points of a LAS/LAZ file into a TIN</p></li>
-<li><p>las2dem       rasterizes them into a DEM</p></li>
-<li><p>las2iso       extracts, optionally simplified, elevation contours</p></li>
-<li><p>lasboundary   computes a boundary polygon</p></li>
-<li><p>demzip        compresses and uncompresses raster data to RasterLAZ format</p></li>
-<li><p>lasground     tool for bare-earth extraction</p></li>
-<li><p>lasdatum      transforms from one horizontal datum to another</p></li>
-<li><p>lasheight     computes the height of each LAS point above the ground</p></li>
-<li><p>lasclassify   classifies buildings and high vegetation (i.e. trees)</p></li>
-<li><p>lascanopy     computes popular forestry metrics and grids them onto a raster</p></li>
-<li><p>lasoverlap    checks flight line overlap and/or vertical and horizontal alignment</p></li>
-<li><p>lastrack      takes files together with a trajectory file by matching GPS time stamps</p></li>
-<li><p>lascolor      colors LiDAR points based on imagery</p></li>
-<li><p>lasoptimize   optimizes data for better compression and spatial coherency</p></li>
-<li><p>lascontrol    computes the height at certain x and y control points and reports the difference</p></li>
-<li><p>lasgrid       grids data onto a raster</p></li>
-<li><p>lascopy       copies attributes using the GPS-time stamp and the return number</p></li>
-<li><p>lasvoxel      computes a voxelization of points</p></li>
-<li><p>lasdistance   classifies, flags, or removes points based on distance from polygonal segments</p></li>
-<li><p>lasoverage    finds the “overage” of a airborne collect that get covered by multiple flightline</p></li>
-<li><p>lasvalidate   determine if LAS files are conform to the ASPRS LAS specifications</p></li>
-<li><p>lasindex      creates a <a href="#id13"><span class="problematic" id="id14">*</span></a>.lax file for a given <a href="#id15"><span class="problematic" id="id16">*</span></a>.las or <a href="#id17"><span class="problematic" id="id18">*</span></a>.laz file that contains spatial indexing information</p></li>
-<li><p>lasnoise      flags or removes noise points in LAS/LAZ/BIN/ASCII files</p></li>
-<li><p>lasduplicate  removes all duplicate points from a LAS/LAZ/ASCII file</p></li>
-<li><p>lassplit      splits the input file(s) into several output files based on various parameters</p></li>
-<li><p>lasreturn     reports geometric return statistics and repairs ‘number of returns’ field based on GPS times</p></li>
-<li><p>lasprecision  reads LIDAR data in the LAS format and computes statistics about precision “advertised” in the header</p></li>
-<li><p>laspublish    do 3D visualization of LiDAR data in a web browser using the WebGL Potree</p></li>
-<li><p>lasview       visualizes the contents of a LAS/LAZ file and can also compute a TIN</p></li>
-<li><p>blast2dem     process billion of LIDAR points from the LAS/LAZ format, triangulates them a seamless TIN, and rasters the TIN onto a DEM that can optionally be tiled</p></li>
-<li><p>blast2iso     process billion of LIDAR points from the LAS/LAZ format, triangulates them a seamless (!) TIN, and extracts contours at the specified elevations from the TIN</p></li>
-<li><p>and even more…      see the full product overview</p></li>
+<li><p>full list</p>
+<ul>
+<li><p>laszip	powerful, lossless LiDAR compressor that turns large LAS files into much smaller LAZ files that are only 7 - 20 percent of the original file size</p></li>
+<li><p>lastile	creates a tiling of LAS/LAZ files</p></li>
+<li><p>lassort	z-orders LAS/LAZ files</p></li>
+<li><p>lasclip	clips away points falling into polygonal shapes (e.g. building footprints)</p></li>
+<li><p>txt2las	converts LiDAR from standard ASCII to LAS/LAZ</p></li>
+<li><p>las2txt	turns LAS/LAZ into human-readable and easy-to-parse text</p></li>
+<li><p>lasinfo	prints out an overview of the contents of a LAS/LAZ file</p></li>
+<li><p>las2shp	turns LAS/LAZ into ESRI’s Shapefile format</p></li>
+<li><p>shp2las	turns an ESRI’s Shapefile into LAS/LAZ</p></li>
+<li><p>lasmerge	can merge several LAS/LAZ files into one</p></li>
+<li><p>e572las	extracts the points from the E57 format and stores them as LAS/LAZ files</p></li>
+<li><p>las2las	filters, transforms, subsamples, clips, thins, …</p></li>
+<li><p>lasthin	implements a simple point thinning algorithm</p></li>
+<li><p>las2tin	triangulates the points of a LAS/LAZ file into a TIN</p></li>
+<li><p>las2dem	rasterizes them into a DEM</p></li>
+<li><p>las2iso	extracts, optionally simplified, elevation contours</p></li>
+<li><p>lasboundary	computes a boundary polygon</p></li>
+<li><p>demzip	compresses and uncompresses raster data to RasterLAZ format</p></li>
+<li><p>lasground	tool for bare-earth extraction</p></li>
+<li><p>lasdatum	transforms from one horizontal datum to another</p></li>
+<li><p>lasheight	computes the height of each LAS point above the ground</p></li>
+<li><p>lasclassify	classifies buildings and high vegetation (i.e. trees)</p></li>
+<li><p>lascanopy	computes popular forestry metrics and grids them onto a raster</p></li>
+<li><p>lasoverlap	checks flight line overlap and/or vertical and horizontal alignment</p></li>
+<li><p>lastrack	takes files together with a trajectory file by matching GPS time stamps</p></li>
+<li><p>lascolor	colors LiDAR points based on imagery</p></li>
+<li><p>lasoptimize	optimizes data for better compression and spatial coherency</p></li>
+<li><p>lascontrol	computes the height at certain x and y control points and reports the difference</p></li>
+<li><p>lasgrid	grids data onto a raster</p></li>
+<li><p>lascopy	copies attributes using the GPS-time stamp and the return number</p></li>
+<li><p>lasvoxel	computes a voxelization of points</p></li>
+<li><p>lasdistance	classifies, flags, or removes points based on distance from polygonal segments</p></li>
+<li><p>lasoverage	finds the “overage” of a airborne collect that get covered by multiple flightline</p></li>
+<li><p>lasvalidate	determine if LAS files are conform to the ASPRS LAS specifications</p></li>
+<li><p>lasindex	creates a *.lax file for a given *.las or *.laz file that contains spatial indexing information</p></li>
+<li><p>lasnoise	flags or removes noise points in LAS/LAZ/BIN/ASCII files</p></li>
+<li><p>lasduplicate	removes all duplicate points from a LAS/LAZ/ASCII file</p></li>
+<li><p>lassplit	splits the input file(s) into several output files based on various parameters</p></li>
+<li><p>lasreturn	reports geometric return statistics and repairs ‘number of returns’ field based on GPS times</p></li>
+<li><p>lasprecision	reads LIDAR data in the LAS format and computes statistics about precision “advertised” in the header</p></li>
+<li><p>laspublish	do 3D visualization of LiDAR data in a web browser using the WebGL Potree</p></li>
+<li><p>lasview	visualizes the contents of a LAS/LAZ file and can also compute a TIN</p></li>
+<li><p>blast2dem	process billion of LIDAR points from the LAS/LAZ format, triangulates them a seamless TIN, and rasters the TIN onto a DEM that can optionally be tiled</p></li>
+<li><p>blast2iso	process billion of LIDAR points from the LAS/LAZ format, triangulates them a seamless (!) TIN, and extracts contours at the specified elevations from the TIN</p></li>
+<li><p>and even more…	see the full product overview</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p># Photon Azure Viewer</p>
+</div>
+</div>
+<div class="section" id="photon-azure-viewer">
+<h1>Photon Azure Viewer<a class="headerlink" href="#photon-azure-viewer" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/dcasota/photonos-scripts/wiki/Configure-Potree%2C-a-WebGL-based-viewer-for-large-point-clouds%2C-on-VMware-Photon-OS">https://github.com/dcasota/photonos-scripts/wiki/Configure-Potree%2C-a-WebGL-based-viewer-for-large-point-clouds%2C-on-VMware-Photon-OS</a></p></li>
+<li><p>https://github.com/dcasota/photonos-scripts/wiki/Configure-Potree%2C-a-WebGL-based-viewer-for-large-point-clouds%2C-on-VMware-Photon-OS</p></li>
 </ul>
-<p>## Areas od Study - Ideas</p>
+<div class="section" id="areas-od-study-ideas">
+<h2>Areas od Study - Ideas<a class="headerlink" href="#areas-od-study-ideas" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://code.visualstudio.com/docs/setup/linux">https://code.visualstudio.com/docs/setup/linux</a></p></li>
-<li><p><a class="reference external" href="https://www.usgs.gov/news/technical-announcement/usgs-3dep-lidar-point-cloud-now-available-amazon-public-dataset">https://www.usgs.gov/news/technical-announcement/usgs-3dep-lidar-point-cloud-now-available-amazon-public-dataset</a></p></li>
-<li><p><a class="reference external" href="https://github.com/stac-extensions/pointcloud">https://github.com/stac-extensions/pointcloud</a></p></li>
-<li><p><a class="reference external" href="https://medium.com/codait/nodebooks-node-js-data-science-notebooks-aa140bea21ba">https://medium.com/codait/nodebooks-node-js-data-science-notebooks-aa140bea21ba</a></p></li>
-<li><p><a class="reference external" href="https://www.amazon.com/Head-First-JavaScript-Programming-Freeman/dp/144934013X/ref=as_li_ss_tl?ie=UTF8&amp;qid=1442769823&amp;sr=8-15&amp;keywords=javascript&amp;linkCode=sl1&amp;tag=nethta-20&amp;linkId=840b2a3569091af4a8106c27c814a16b">https://www.amazon.com/Head-First-JavaScript-Programming-Freeman/dp/144934013X/ref=as_li_ss_tl?ie=UTF8&amp;qid=1442769823&amp;sr=8-15&amp;keywords=javascript&amp;linkCode=sl1&amp;tag=nethta-20&amp;linkId=840b2a3569091af4a8106c27c814a16b</a></p></li>
-<li><p><a class="reference external" href="https://prd-tnm.s3.amazonaws.com/LidarExplorer/index.html#/">https://prd-tnm.s3.amazonaws.com/LidarExplorer/index.html#/</a></p></li>
-<li><p><a class="reference external" href="https://github.com/n-riesco/ijavascript">https://github.com/n-riesco/ijavascript</a>   # javascript jupyter kernel - more study needed</p></li>
-<li><p><a class="reference external" href="https://www.freecodecamp.org/news/anatomy-of-js-module-systems-and-building-libraries-fadcd8dbd0e/">https://www.freecodecamp.org/news/anatomy-of-js-module-systems-and-building-libraries-fadcd8dbd0e/</a></p></li>
+<li><p>https://code.visualstudio.com/docs/setup/linux</p></li>
+<li><p>https://www.usgs.gov/news/technical-announcement/usgs-3dep-lidar-point-cloud-now-available-amazon-public-dataset</p></li>
+<li><p>https://github.com/stac-extensions/pointcloud</p></li>
+<li><p>https://medium.com/codait/nodebooks-node-js-data-science-notebooks-aa140bea21ba</p></li>
+<li><p>https://www.amazon.com/Head-First-JavaScript-Programming-Freeman/dp/144934013X/ref=as_li_ss_tl?ie=UTF8&amp;qid=1442769823&amp;sr=8-15&amp;keywords=javascript&amp;linkCode=sl1&amp;tag=nethta-20&amp;linkId=840b2a3569091af4a8106c27c814a16b</p></li>
+<li><p>https://prd-tnm.s3.amazonaws.com/LidarExplorer/index.html#/</p></li>
+<li><p>https://github.com/n-riesco/ijavascript   # javascript jupyter kernel - more study needed</p></li>
+<li><p>https://www.freecodecamp.org/news/anatomy-of-js-module-systems-and-building-libraries-fadcd8dbd0e/</p></li>
 </ul>
-<p># Links first blush</p>
+</div>
+</div>
+<div class="section" id="links-first-blush">
+<h1>Links first blush<a class="headerlink" href="#links-first-blush" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference external" href="https://pdal.io/workshop/exercises/georeferencing/index.html#exercise">https://pdal.io/workshop/exercises/georeferencing/index.html#exercise</a></p></li>
-<li><p><a class="reference external" href="https://www.google.com/search?channel=tus5&amp;client=firefox-b-1-d&amp;q=node+gulp+watch">https://www.google.com/search?channel=tus5&amp;client=firefox-b-1-d&amp;q=node+gulp+watch</a></p></li>
+<li><p>https://pdal.io/workshop/exercises/georeferencing/index.html#exercise</p></li>
+<li><p>https://www.google.com/search?channel=tus5&amp;client=firefox-b-1-d&amp;q=node+gulp+watch</p></li>
 </ul>
-<p>### formats for 3d pointclouds</p>
+<div class="section" id="formats-for-3d-pointclouds">
+<h2>formats for 3d pointclouds<a class="headerlink" href="#formats-for-3d-pointclouds" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://info.vercator.com/blog/what-are-the-most-common-3d-point-cloud-file-formats-and-how-to-solve-interoperability-issues">https://info.vercator.com/blog/what-are-the-most-common-3d-point-cloud-file-formats-and-how-to-solve-interoperability-issues</a></p></li>
-<li><p><a class="reference external" href="https://www.google.com/search?channel=tus5&amp;client=firefox-b-1-d&amp;q=node+gulp+watch">https://www.google.com/search?channel=tus5&amp;client=firefox-b-1-d&amp;q=node+gulp+watch</a></p></li>
+<li><p>https://info.vercator.com/blog/what-are-the-most-common-3d-point-cloud-file-formats-and-how-to-solve-interoperability-issues</p></li>
+<li><p>https://www.google.com/search?channel=tus5&amp;client=firefox-b-1-d&amp;q=node+gulp+watch</p></li>
 </ul>
-<p>### pointcloud to triangles</p>
+</div>
+<div class="section" id="pointcloud-to-triangles">
+<h2>pointcloud to triangles<a class="headerlink" href="#pointcloud-to-triangles" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://stackoverflow.com/questions/63129494/generating-surface-mesh-from-point-cloud-using-plotly">https://stackoverflow.com/questions/63129494/generating-surface-mesh-from-point-cloud-using-plotly</a></p></li>
-<li><p><a class="reference external" href="https://stackoverflow.com/questions/7879160/algorithm-for-generating-a-triangular-mesh-from-a-cloud-of-points">https://stackoverflow.com/questions/7879160/algorithm-for-generating-a-triangular-mesh-from-a-cloud-of-points</a></p></li>
+<li><p>https://stackoverflow.com/questions/63129494/generating-surface-mesh-from-point-cloud-using-plotly</p></li>
+<li><p>https://stackoverflow.com/questions/7879160/algorithm-for-generating-a-triangular-mesh-from-a-cloud-of-points</p></li>
 </ul>
-<p># open3d videos</p>
+</div>
+</div>
+<div class="section" id="open3d-videos">
+<h1>open3d videos<a class="headerlink" href="#open3d-videos" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=Rsh4poEpahI">https://www.youtube.com/watch?v=Rsh4poEpahI</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=fY_BzTmU9io">https://www.youtube.com/watch?v=fY_BzTmU9io</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=zF3MreN1w6c">https://www.youtube.com/watch?v=zF3MreN1w6c</a></p></li>
+<li><p>https://www.youtube.com/watch?v=Rsh4poEpahI</p></li>
+<li><p>https://www.youtube.com/watch?v=fY_BzTmU9io</p></li>
+<li><p>https://www.youtube.com/watch?v=zF3MreN1w6c</p></li>
 </ul>
-<p><a class="reference external" href="https://www.youtube.com/watch?v=VkRzNYxwyH0">https://www.youtube.com/watch?v=VkRzNYxwyH0</a></p>
-<p>### git
-<a class="reference external" href="https://github.com/centreborelli/pypotree">https://github.com/centreborelli/pypotree</a></p>
-<p>### pypotree</p>
+<p>https://www.youtube.com/watch?v=VkRzNYxwyH0</p>
+<div class="section" id="git">
+<h2>git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h2>
+<p>https://github.com/centreborelli/pypotree</p>
+</div>
+<div class="section" id="pypotree">
+<h2>pypotree<a class="headerlink" href="#pypotree" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/sitn/pytree">https://github.com/sitn/pytree</a></p></li>
-<li><p><a class="reference external" href="https://colab.research.google.com/drive/1It3EbWy9W8Xf65ikP-_tpkVdJRmvwTQT#scrollTo=NfPO-aptsKlC">https://colab.research.google.com/drive/1It3EbWy9W8Xf65ikP-_tpkVdJRmvwTQT#scrollTo=NfPO-aptsKlC</a></p></li>
-<li><p><a class="reference external" href="https://github.com/potree/potree">https://github.com/potree/potree</a></p></li>
-<li><p><a class="reference external" href="https://www.designsafe-ci.org/rw/user-guides/tools-applications/visualization/potree-viewer/">https://www.designsafe-ci.org/rw/user-guides/tools-applications/visualization/potree-viewer/</a></p></li>
-<li><p><a class="reference external" href="https://twitter.com/m_schuetz/status/973145431894085632?lang=en">https://twitter.com/m_schuetz/status/973145431894085632?lang=en</a></p></li>
-<li><p><a class="reference external" href="https://github.com/centreborelli/pypotree/blob/master/pypotree.py">https://github.com/centreborelli/pypotree/blob/master/pypotree.py</a></p></li>
-<li><dl class="simple">
-<dt><a class="reference external" href="https://github.com/sitn/pytree">https://github.com/sitn/pytree</a></dt><dd><ul>
+<li><p>https://github.com/sitn/pytree</p></li>
+<li><p>https://colab.research.google.com/drive/1It3EbWy9W8Xf65ikP-_tpkVdJRmvwTQT#scrollTo=NfPO-aptsKlC</p></li>
+<li><p>https://github.com/potree/potree</p></li>
+<li><p>https://www.designsafe-ci.org/rw/user-guides/tools-applications/visualization/potree-viewer/</p></li>
+<li><p>https://twitter.com/m_schuetz/status/973145431894085632?lang=en</p></li>
+<li><p>https://github.com/centreborelli/pypotree/blob/master/pypotree.py</p></li>
+<li><p>https://github.com/sitn/pytree</p>
+<ul>
 <li><p>flask application</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p><a class="reference external" href="https://github.com/potree/PotreeDesktop/releases/tag/1.6">https://github.com/potree/PotreeDesktop/releases/tag/1.6</a></p>
-<p><a class="reference external" href="https://www.linode.com/community/questions/21270/how-to-serve-static-asset-files-with-flask-and-nginx">https://www.linode.com/community/questions/21270/how-to-serve-static-asset-files-with-flask-and-nginx</a>
-### medium article</p>
+<p>https://github.com/potree/PotreeDesktop/releases/tag/1.6</p>
+<p>https://www.linode.com/community/questions/21270/how-to-serve-static-asset-files-with-flask-and-nginx</p>
+</div>
+<div class="section" id="medium-article">
+<h2>medium article<a class="headerlink" href="#medium-article" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://towardsdatascience.com/guide-to-real-time-visualisation-of-massive-3d-point-clouds-in-python-ea6f00241ee0">https://towardsdatascience.com/guide-to-real-time-visualisation-of-massive-3d-point-clouds-in-python-ea6f00241ee0</a></p></li>
-<li><p><a class="reference external" href="https://blog.jupyter.org/ipygany-jupyter-into-the-third-dimension-29a97597fc33">https://blog.jupyter.org/ipygany-jupyter-into-the-third-dimension-29a97597fc33</a></p></li>
+<li><p>https://towardsdatascience.com/guide-to-real-time-visualisation-of-massive-3d-point-clouds-in-python-ea6f00241ee0</p></li>
+<li><p>https://blog.jupyter.org/ipygany-jupyter-into-the-third-dimension-29a97597fc33</p></li>
 </ul>
-<p><a class="reference external" href="https://github.com/widgetti/ipyvolume/blob/master/notebooks/demo-0.5.ipynb">https://github.com/widgetti/ipyvolume/blob/master/notebooks/demo-0.5.ipynb</a></p>
-<p>### hoop 3d cad</p>
+<p>https://github.com/widgetti/ipyvolume/blob/master/notebooks/demo-0.5.ipynb</p>
+</div>
+<div class="section" id="hoop-3d-cad">
+<h2>hoop 3d cad<a class="headerlink" href="#hoop-3d-cad" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://demo.techsoft3d.com/">https://demo.techsoft3d.com/</a></p></li>
-<li><p><a class="reference external" href="https://github.com/isl-org/Open3D/issues/537">https://github.com/isl-org/Open3D/issues/537</a></p></li>
-<li><p><a class="reference external" href="https://github.com/isl-org/Open3D/issues/376">https://github.com/isl-org/Open3D/issues/376</a></p></li>
-<li><p><a class="reference external" href="http://www.open3d.org/docs/0.9.0/tutorial/Basic/azure_kinect.html">http://www.open3d.org/docs/0.9.0/tutorial/Basic/azure_kinect.html</a></p></li>
+<li><p>https://demo.techsoft3d.com/</p></li>
+<li><p>https://github.com/isl-org/Open3D/issues/537</p></li>
+<li><p>https://github.com/isl-org/Open3D/issues/376</p></li>
+<li><p>http://www.open3d.org/docs/0.9.0/tutorial/Basic/azure_kinect.html</p></li>
 </ul>
-<p>### lidar books</p>
-<p><a class="reference external" href="https://www.goodreads.com/book/show/42996145-lidar-point-cloud-data-processing-and-applications">https://www.goodreads.com/book/show/42996145-lidar-point-cloud-data-processing-and-applications</a></p>
-<p>### jupyter viz</p>
-<p><a class="reference external" href="https://mapbox-mapboxgl-jupyter.readthedocs-hosted.com/en/latest/index.html">https://mapbox-mapboxgl-jupyter.readthedocs-hosted.com/en/latest/index.html</a></p>
-<p><a class="reference external" href="https://gist.githubusercontent.com/kapadia/6359528/raw/b97fe6b8e7d879d07d71603791fe818475ad7ba3/Ruse%2520IPython%2520Notebook">https://gist.githubusercontent.com/kapadia/6359528/raw/b97fe6b8e7d879d07d71603791fe818475ad7ba3/Ruse%2520IPython%2520Notebook</a></p>
+</div>
+<div class="section" id="lidar-books">
+<h2>lidar books<a class="headerlink" href="#lidar-books" title="Permalink to this headline">¶</a></h2>
+<p>https://www.goodreads.com/book/show/42996145-lidar-point-cloud-data-processing-and-applications</p>
+</div>
+<div class="section" id="jupyter-viz">
+<h2>jupyter viz<a class="headerlink" href="#jupyter-viz" title="Permalink to this headline">¶</a></h2>
+<p>https://mapbox-mapboxgl-jupyter.readthedocs-hosted.com/en/latest/index.html</p>
+<p>https://gist.githubusercontent.com/kapadia/6359528/raw/b97fe6b8e7d879d07d71603791fe818475ad7ba3/Ruse%2520IPython%2520Notebook</p>
+</div>
+</div>
 
 
            </div>
+           
           </div>
           <footer>
+  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Tony Butzer.</p>
-  </div>
+    <p>
+        &copy; Copyright 2022, Tony Butzer
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
+
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

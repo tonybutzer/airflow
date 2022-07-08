@@ -1,35 +1,67 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
-    <script src="_static/js/theme.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>k8s &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="00_overview.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="01_tasks.html" /> 
+    <link rel="next" title="Overview" href="00_overview.html" />
+    <link rel="prev" title="Tasks" href="01_tasks.html" /> 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
+          
+
+          
             <a href="index.html" class="icon icon-home"> Airflow Sandbox Training in the cloud
+          
+
+          
           </a>
+
+          
+            
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -37,159 +69,335 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_tasks.html">Tasks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_tasks.html#cleanup-smartflow-ec2-instance-butzer-eccoe-smartflow">Cleanup smartflow ec2 instance butzer-eccoe-smartflow</a></li>
 </ul>
-</div>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">k8s</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#book-learning-kubernetes">Book Learning Kubernetes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#terminology">Terminology</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#microk8s">microk8s</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#startup-and-shutdown">Startup and shutdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dashboard">Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#k9s">k9s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#helm">helm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jupyter-hub">jupyter hub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pvc-and-pv-notes-tbd">PVC and PV notes - tbd</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#airflow-via-helm">airflow via helm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#videos">videos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="00_overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="00_overview.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_overview.html#mission">Mission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_overview.html#objectives">Objectives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="00_overview.html#prerequsite-steps">Prerequsite steps</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="00_overview.html#quests">Quests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="00_overview.html#get-docker-airflow-running-in-chs">Get Docker Airflow Running in CHS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="00_overview.html#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2_env_vars.html">Env Variables or metastore variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_env_vars.html#todo">Todo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="9_quests.html">Quests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="9_quests.html#understanding-variables">0.0 Understanding Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_quests.html#stac-search-task">0. Stac Search Task</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#building-the-docker-smartflow">Building the Docker smartflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="9_quests.html#issue">ISSUE:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#docker-compose-trial-airflow-celery">Docker Compose Trial Airflow - Celery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#quickstart">Quickstart</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="9_quests.html#airflow-study">1 Airflow Study</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#prerequisites-args-and-kwargs">Prerequisites *args and *kwargs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#getting-started">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#introducing-airflow">Introducing Airflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="9_quests.html#main-components-scheduler-workers-webserver">3 main components - scheduler; workers; webserver</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="9_quests.html#why-airflow-pros-cons">Why Airflow PROS/CONS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="9_quests.html#reasons-to-choose-airflow-in-the-past-sections">Reasons to choose Airflow In the past sections,</a></li>
+<li class="toctree-l4"><a class="reference internal" href="9_quests.html#reasons-not-to-choose-airflow">Reasons not to choose Airflow</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3_engineering_notes.html">Engineering Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_engineering_notes.html#smartflow-references">smartflow references</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-tutorial-videos-document-good-to-bad">Airflow Tutorial Videos - document good to bad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-operators">Airflow Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#running-airflow-with-docker-compose">Running Airflow with Docker Compose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#docker-simple-orcherstration-python-docker-starts">Docker Simple Orcherstration - python docker starts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="3_engineering_notes.html#rylie-notes">Rylie Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-scaling-celery">Airflow Scaling Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#just-celery">Just Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#terraform">Terraform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#troubleshooting">TroubleShooting</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Airflow Sandbox Training in the cloud</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>k8s</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+            
             <a href="_sources/4_k8s.md.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-  <p># k8s</p>
-<p>## Book Learning Kubernetes
-#### Source
-&gt;Source code All of the source code for the demos and do-it-yourself solutions is available at
-- <a class="reference external" href="https://bitbucket.org/epobb/kubernetesbookfiles">https://bitbucket.org/epobb/kubernetesbookfiles</a>
-It can be downloaded as a ZIP file, or if you installed GIT you can simply type:
-<code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://bitbucket.org/epobb/kubernetesbookfiles.git</span>
-<span class="pre">`</span></code></p>
-<p>Weil, Arnaud. Learn Kubernetes - Container orchestration using Docker (Learn Collection) . leanpub.com. Kindle Edition.</p>
-<p>#### Terminology</p>
+            
+  <div class="section" id="k8s">
+<h1>k8s<a class="headerlink" href="#k8s" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="book-learning-kubernetes">
+<h2>Book Learning Kubernetes<a class="headerlink" href="#book-learning-kubernetes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="source">
+<h3>Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Source code All of the source code for the demos and do-it-yourself solutions is available at</p>
+</div></blockquote>
 <ul class="simple">
-<li><p><a class="reference external" href="https://kubernetes.io/docs/concepts/overview/components/">https://kubernetes.io/docs/concepts/overview/components/</a></p></li>
+<li><p>https://bitbucket.org/epobb/kubernetesbookfiles
+It can be downloaded as a ZIP file, or if you installed GIT you can simply type:</p></li>
 </ul>
-<p>![cluster k8s](<a class="reference external" href="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg">https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg</a>)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">bitbucket</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">epobb</span><span class="o">/</span><span class="n">kubernetesbookfiles</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>Weil, Arnaud. Learn Kubernetes - Container orchestration using Docker (Learn Collection) . leanpub.com. Kindle Edition.</p>
+</div>
+<div class="section" id="terminology">
+<h3>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>https://kubernetes.io/docs/concepts/overview/components/</p></li>
+</ul>
+<p><img alt="cluster k8s" src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" /></p>
 <ul class="simple">
 <li><p>Kubectl contexts The kubectl tool connects to a Kubernetes cluster thanks to a <strong>context</strong>. Each context stores credentials for a given user in a given cluster.</p></li>
 </ul>
-<p>## microk8s</p>
-<p>### Startup and shutdown</p>
-<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
-<span class="pre">snap</span> <span class="pre">enable</span> <span class="pre">microk8s</span>
-<span class="pre">snap</span> <span class="pre">disable</span> <span class="pre">microk8s</span>
-<span class="pre">`</span></code></p>
+</div>
+</div>
+<div class="section" id="microk8s">
+<h2>microk8s<a class="headerlink" href="#microk8s" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="startup-and-shutdown">
+<h3>Startup and shutdown<a class="headerlink" href="#startup-and-shutdown" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>snap <span class="nb">enable</span> microk8s
+snap disable microk8s
+</pre></div>
+</div>
 <ul class="simple">
-<li><dl class="simple">
-<dt>sudo (cd /etc/yum.repos.d &amp;&amp; wget <a class="reference external" href="https://people.canonical.com/~mvo/snapd/amazon-linux2/snapd-amzn2.repo">https://people.canonical.com/~mvo/snapd/amazon-linux2/snapd-amzn2.repo</a>.)</dt><dd><ul>
+<li><p>sudo (cd /etc/yum.repos.d &amp;&amp; wget https://people.canonical.com/~mvo/snapd/amazon-linux2/snapd-amzn2.repo.)</p>
+<ul>
 <li><p>859  sudo yum install snapd</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p>### Dashboard
-- microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 –address 0.0.0.0
-- microk8s kubectl create token default</p>
-<p>## k9s</p>
-<p>## helm</p>
-<p>## jupyter hub</p>
+</div>
+<div class="section" id="dashboard">
+<h3>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><dl class="simple">
-<dt>loadbalancer - explose the port for the hub</dt><dd><ul>
+<li><p>microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 –address 0.0.0.0</p></li>
+<li><p>microk8s kubectl create token default</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="k9s">
+<h2>k9s<a class="headerlink" href="#k9s" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="helm">
+<h2>helm<a class="headerlink" href="#helm" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="jupyter-hub">
+<h2>jupyter hub<a class="headerlink" href="#jupyter-hub" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>loadbalancer - explose the port for the hub</p>
+<ul>
 <li><p>microk8s kubectl patch svc proxy-public -n jhub -p ‘{“spec”: {“type”: “LoadBalancer”, “externalIPs”:[“10.12.69.80”]}}’</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
-<p>### PVC and PV notes - tbd
-- <a class="reference external" href="https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/customizing/user-storage.html">https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/customizing/user-storage.html</a></p>
-<p>## airflow via helm</p>
-<ul>
-<li><p><a class="reference external" href="https://vinayak.io/2020/09/10/day-24-jupyterhub-airflow-microk8s/">https://vinayak.io/2020/09/10/day-24-jupyterhub-airflow-microk8s/</a></p></li>
+<div class="section" id="pvc-and-pv-notes-tbd">
+<h3>PVC and PV notes - tbd<a class="headerlink" href="#pvc-and-pv-notes-tbd" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/customizing/user-storage.html</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="airflow-via-helm">
+<h2>airflow via helm<a class="headerlink" href="#airflow-via-helm" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>https://vinayak.io/2020/09/10/day-24-jupyterhub-airflow-microk8s/</p></li>
 <li><p>install snapd on amazon linux</p></li>
-<li><dl class="simple">
-<dt>install microk8s</dt><dd><ul class="simple">
+<li><p>install microk8s</p>
+<ul>
 <li><p>$ sudo snap install microk8s –classic</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt>create namespace</dt><dd><ul class="simple">
+<li><p>create namespace</p>
+<ul>
 <li><p>microk8s kubectl create namespace jhub</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt>enable helm</dt><dd><ul class="simple">
+<li><p>enable helm</p>
+<ul>
 <li><p>microk8s enable helm3</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt>add jupyter hub repo to helm</dt><dd><ul class="simple">
-<li><p>microk8s helm3 repo add jupyterhub <a class="reference external" href="https://jupyterhub.github.io/helm-chart">https://jupyterhub.github.io/helm-chart</a></p></li>
+<li><p>add jupyter hub repo to helm</p>
+<ul>
+<li><p>microk8s helm3 repo add jupyterhub https://jupyterhub.github.io/helm-chart</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><ul class="simple">
+<li><ul>
 <li><p>microk8s helm3 repo update</p></li>
-<li><p>RELEASE=jhub NAMESPACE=jhub microk8s helm3 upgrade –cleanup-on-fail –install $RELEASE jupyterhub/jupyterhub </p></li>
+<li><p>RELEASE=jhub NAMESPACE=jhub microk8s helm3 upgrade –cleanup-on-fail –install $RELEASE jupyterhub/jupyterhub \
+–namespace $NAMESPACE –version=0.9.0 –values values.yml</p></li>
 </ul>
-<p>–namespace $NAMESPACE –version=0.9.0 –values values.yml</p>
 </li>
 <li><p>microk8s helm3 –debug upgrade –install jupyterhub jupyterhub/jupyterhub –namespace jhub</p></li>
 </ul>
-<p>## videos</p>
+</div>
+<div class="section" id="videos">
+<h2>videos<a class="headerlink" href="#videos" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=wN6FlmPy2qA">https://www.youtube.com/watch?v=wN6FlmPy2qA</a></p></li>
+<li><p>https://www.youtube.com/watch?v=wN6FlmPy2qA</p></li>
 </ul>
+</div>
+</div>
 
 
            </div>
+           
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="01_tasks.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="00_overview.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="00_overview.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="01_tasks.html" class="btn btn-neutral float-left" title="Tasks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Tony Butzer.</p>
-  </div>
+    <p>
+        &copy; Copyright 2022, Tony Butzer
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
+
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
