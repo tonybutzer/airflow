@@ -5,8 +5,8 @@
 - test butzer-dev
 	- [x] install miniconda on efs
 	- [x] test jupyter - clone airflow
-	- [ ] install snapd
-	- install microk8s
+	- [x] install snapd
+	- [x] install microk8s
 	- [x] test docker compose airflow-celery
 		- [x] install docker compose
 
