@@ -10,6 +10,7 @@ v2 - Welcome to Airflow Training Tony
    :maxdepth: 2
    :caption: Contents:
 
+   4_k8s.md
    00_overview.md
    2_env_vars.md
    9_quests.md

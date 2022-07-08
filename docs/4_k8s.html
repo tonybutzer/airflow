@@ -34,7 +34,9 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Overview" href="00_overview.html" />
+    <link rel="prev" title="v2 - Welcome to Airflow Training Tony" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -79,7 +81,22 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">k8s</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#microk8s">microk8s</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#startup-and-shutdown">Startup and shutdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dashboard">Dashboard</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#k9s">k9s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#helm">helm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jupyter-hub">jupyter hub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pvc-and-pv-notes-tbd">PVC and PV notes - tbd</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#airflow-via-helm">airflow via helm</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="00_overview.html">Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="00_overview.html#purpose">Purpose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="00_overview.html#mission">Mission</a></li>
@@ -209,6 +226,12 @@
 <h1>k8s<a class="headerlink" href="#k8s" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="microk8s">
 <h2>microk8s<a class="headerlink" href="#microk8s" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="startup-and-shutdown">
+<h3>Startup and shutdown<a class="headerlink" href="#startup-and-shutdown" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>snap <span class="nb">enable</span> microk8s
+snap disable microk8s
+</pre></div>
+</div>
 <ul class="simple">
 <li><p>sudo (cd /etc/yum.repos.d &amp;&amp; wget https://people.canonical.com/~mvo/snapd/amazon-linux2/snapd-amzn2.repo.)</p>
 <ul>
@@ -216,6 +239,13 @@
 </ul>
 </li>
 </ul>
+</div>
+<div class="section" id="dashboard">
+<h3>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 –address 0.0.0.0</p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="k9s">
 <h2>k9s<a class="headerlink" href="#k9s" title="Permalink to this headline">¶</a></h2>
@@ -231,8 +261,13 @@
 <li><p>microk8s kubectl patch svc proxy-public -n jhub -p ‘{“spec”: {“type”: “LoadBalancer”, “externalIPs”:[“10.12.69.80”]}}’</p></li>
 </ul>
 </li>
+</ul>
+<div class="section" id="pvc-and-pv-notes-tbd">
+<h3>PVC and PV notes - tbd<a class="headerlink" href="#pvc-and-pv-notes-tbd" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
 <li><p>https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/customizing/user-storage.html</p></li>
 </ul>
+</div>
 </div>
 <div class="section" id="airflow-via-helm">
 <h2>airflow via helm<a class="headerlink" href="#airflow-via-helm" title="Permalink to this headline">¶</a></h2>
@@ -275,6 +310,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="00_overview.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="v2 - Welcome to Airflow Training Tony" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
