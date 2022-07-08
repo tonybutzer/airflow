@@ -209,6 +209,13 @@
 <h1>k8s<a class="headerlink" href="#k8s" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="microk8s">
 <h2>microk8s<a class="headerlink" href="#microk8s" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>sudo (cd /etc/yum.repos.d &amp;&amp; wget https://people.canonical.com/~mvo/snapd/amazon-linux2/snapd-amzn2.repo.)</p>
+<ul>
+<li><p>859  sudo yum install snapd</p></li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="section" id="k9s">
 <h2>k9s<a class="headerlink" href="#k9s" title="Permalink to this headline">¶</a></h2>
@@ -224,6 +231,7 @@
 <li><p>microk8s kubectl patch svc proxy-public -n jhub -p ‘{“spec”: {“type”: “LoadBalancer”, “externalIPs”:[“10.12.69.80”]}}’</p></li>
 </ul>
 </li>
+<li><p>https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/customizing/user-storage.html</p></li>
 </ul>
 </div>
 <div class="section" id="airflow-via-helm">
