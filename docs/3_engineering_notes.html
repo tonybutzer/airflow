@@ -1,66 +1,34 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Engineering Notes &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Quests" href="9_quests.html" /> 
+    <link rel="prev" title="&lt;no title&gt;" href="9_quests.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Airflow Sandbox Training in the cloud
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -68,306 +36,132 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_tasks.html">Tasks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_tasks.html#cleanup-smartflow-ec2-instance-butzer-eccoe-smartflow">Cleanup smartflow ec2 instance butzer-eccoe-smartflow</a></li>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul class="simple">
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="4_k8s.html">k8s</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#book-learning-kubernetes">Book Learning Kubernetes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#source">Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#terminology">Terminology</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#microk8s">microk8s</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#startup-and-shutdown">Startup and shutdown</a></li>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#dashboard">Dashboard</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#k9s">k9s</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#helm">helm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#jupyter-hub">jupyter hub</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#pvc-and-pv-notes-tbd">PVC and PV notes - tbd</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#airflow-via-helm">airflow via helm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#videos">videos</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="00_overview.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="00_overview.html#purpose">Purpose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_overview.html#mission">Mission</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_overview.html#objectives">Objectives</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="00_overview.html#prerequsite-steps">Prerequsite steps</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="00_overview.html#quests">Quests</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="00_overview.html#get-docker-airflow-running-in-chs">Get Docker Airflow Running in CHS</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="00_overview.html#references">References</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_env_vars.html">Env Variables or metastore variables</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_env_vars.html#todo">Todo</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="9_quests.html">Quests</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="9_quests.html#understanding-variables">0.0 Understanding Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="9_quests.html#stac-search-task">0. Stac Search Task</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="9_quests.html#building-the-docker-smartflow">Building the Docker smartflow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="9_quests.html#issue">ISSUE:</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="9_quests.html#docker-compose-trial-airflow-celery">Docker Compose Trial Airflow - Celery</a></li>
-<li class="toctree-l3"><a class="reference internal" href="9_quests.html#quickstart">Quickstart</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="9_quests.html#airflow-study">1 Airflow Study</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="9_quests.html#prerequisites-args-and-kwargs">Prerequisites *args and *kwargs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="9_quests.html#source">Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="9_quests.html#getting-started">Getting Started</a></li>
-<li class="toctree-l3"><a class="reference internal" href="9_quests.html#introducing-airflow">Introducing Airflow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="9_quests.html#main-components-scheduler-workers-webserver">3 main components - scheduler; workers; webserver</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="9_quests.html#why-airflow-pros-cons">Why Airflow PROS/CONS</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="9_quests.html#reasons-to-choose-airflow-in-the-past-sections">Reasons to choose Airflow In the past sections,</a></li>
-<li class="toctree-l4"><a class="reference internal" href="9_quests.html#reasons-not-to-choose-airflow">Reasons not to choose Airflow</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Engineering Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#smartflow-references">smartflow references</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#airflow-tutorial-videos-document-good-to-bad">Airflow Tutorial Videos - document good to bad</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#airflow-operators">Airflow Operators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#running-airflow-with-docker-compose">Running Airflow with Docker Compose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#docker-simple-orcherstration-python-docker-starts">Docker Simple Orcherstration - python docker starts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#rylie-notes">Rylie Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#airflow-scaling-celery">Airflow Scaling Celery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#just-celery">Just Celery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#terraform">Terraform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">TroubleShooting</a></li>
-</ul>
-</li>
-</ul>
-
-            
-          
+</div>
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Airflow Sandbox Training in the cloud</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>Engineering Notes</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="_sources/3_engineering_notes.md.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="engineering-notes">
-<h1>Engineering Notes<a class="headerlink" href="#engineering-notes" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="section" id="smartflow-references">
-<h1>smartflow references<a class="headerlink" href="#smartflow-references" title="Permalink to this headline">¶</a></h1>
+             
+  <p># Engineering Notes</p>
+<p># smartflow references</p>
 <ul class="simple">
-<li><p>https://blacksky.smartgitlab.com/smartflow/markdown/Framework/Getting-Started.html</p></li>
-<li><p>https://app.slack.com/client/TN3QR7WAH/C03KCBSUMC0/thread/C03KCBSUMC0-1654795666.581149</p></li>
-<li><p>https://blacksky.smartgitlab.com/smartflow/markdown/Administration/Deployment.html#installation</p></li>
-<li><p>Repository Link: https://smartgitlab.com/blacksky/smartflow</p></li>
-<li><p>Documentation Link: https://blacksky.smartgitlab.com/smartflow</p></li>
+<li><p><a class="reference external" href="https://blacksky.smartgitlab.com/smartflow/markdown/Framework/Getting-Started.html">https://blacksky.smartgitlab.com/smartflow/markdown/Framework/Getting-Started.html</a></p></li>
+<li><p><a class="reference external" href="https://app.slack.com/client/TN3QR7WAH/C03KCBSUMC0/thread/C03KCBSUMC0-1654795666.581149">https://app.slack.com/client/TN3QR7WAH/C03KCBSUMC0/thread/C03KCBSUMC0-1654795666.581149</a></p></li>
+<li><p><a class="reference external" href="https://blacksky.smartgitlab.com/smartflow/markdown/Administration/Deployment.html#installation">https://blacksky.smartgitlab.com/smartflow/markdown/Administration/Deployment.html#installation</a></p></li>
+<li><p>Repository Link: <a class="reference external" href="https://smartgitlab.com/blacksky/smartflow">https://smartgitlab.com/blacksky/smartflow</a></p></li>
+<li><p>Documentation Link: <a class="reference external" href="https://blacksky.smartgitlab.com/smartflow">https://blacksky.smartgitlab.com/smartflow</a></p></li>
 </ul>
-<blockquote>
-<div><p>This channel is to be used for:
+<p>&gt; This channel is to be used for:
 SmartFlow Announcements
 General SmartFlow questions
 To coordinate specific tech support (most likely to be moved off channel for resolution)</p>
-</div></blockquote>
-<div class="section" id="airflow-tutorial-videos-document-good-to-bad">
-<h2>Airflow Tutorial Videos - document good to bad<a class="headerlink" href="#airflow-tutorial-videos-document-good-to-bad" title="Permalink to this headline">¶</a></h2>
+<p>## Airflow Tutorial Videos - document good to bad</p>
 <ul class="simple">
-<li><p>https://www.youtube.com/watch?v=AHMm1wfGuHE</p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=AHMm1wfGuHE">https://www.youtube.com/watch?v=AHMm1wfGuHE</a></p></li>
 </ul>
-</div>
-<div class="section" id="airflow-operators">
-<h2>Airflow Operators<a class="headerlink" href="#airflow-operators" title="Permalink to this headline">¶</a></h2>
+<p>## Airflow Operators</p>
 <ul>
 <li><p>bash</p></li>
 <li><p>noop</p></li>
 <li><p>SimpleHttpOperator</p></li>
 <li><p>EmailOperator</p>
-<p>BashOperator - executes a bash command</p>
+<blockquote>
+<div><p>BashOperator - executes a bash command</p>
 <p>PythonOperator - calls an arbitrary Python function</p>
 <p>EmailOperator - sends an email</p>
+</div></blockquote>
 </li>
-<li><p>https://stackoverflow.com/questions/62660347/airflow-send-email-with-aws-ses</p></li>
+<li><p><a class="reference external" href="https://stackoverflow.com/questions/62660347/airflow-send-email-with-aws-ses">https://stackoverflow.com/questions/62660347/airflow-send-email-with-aws-ses</a></p></li>
 </ul>
-</div>
-<div class="section" id="running-airflow-with-docker-compose">
-<h2>Running Airflow with Docker Compose<a class="headerlink" href="#running-airflow-with-docker-compose" title="Permalink to this headline">¶</a></h2>
+<p>## Running Airflow with Docker Compose</p>
 <ul class="simple">
-<li><p>https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html</p></li>
-<li><p>https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html</p></li>
+<li><p><a class="reference external" href="https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html">https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html</a></p></li>
+<li><p><a class="reference external" href="https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html">https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html</a></p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">--</span><span class="n">profile</span> <span class="n">flower</span> <span class="n">up</span>
-<span class="c1"># put in a makefile - tony</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="docker-simple-orcherstration-python-docker-starts">
-<h2>Docker Simple Orcherstration - python docker starts<a class="headerlink" href="#docker-simple-orcherstration-python-docker-starts" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="rylie-notes">
-<h3>Rylie Notes<a class="headerlink" href="#rylie-notes" title="Permalink to this headline">¶</a></h3>
-</div>
-</div>
-<div class="section" id="airflow-scaling-celery">
-<h2>Airflow Scaling Celery<a class="headerlink" href="#airflow-scaling-celery" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
+docker-compose –profile flower up
+# put in a makefile - tony</p>
+<p><a href="#id3"><span class="problematic" id="id4">``</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
+<p>## Docker Simple Orcherstration - python docker starts</p>
+<p>### Rylie Notes</p>
+<p>&gt;</p>
+<p>## Airflow Scaling Celery</p>
 <ul class="simple">
-<li><p>https://airflow.apache.org/docs/apache-airflow/1.10.1/howto/executor/use-celery.html</p></li>
+<li><p><a class="reference external" href="https://airflow.apache.org/docs/apache-airflow/1.10.1/howto/executor/use-celery.html">https://airflow.apache.org/docs/apache-airflow/1.10.1/howto/executor/use-celery.html</a></p></li>
 </ul>
-</div>
-<div class="section" id="just-celery">
-<h2>Just Celery<a class="headerlink" href="#just-celery" title="Permalink to this headline">¶</a></h2>
-<p>https://www.youtube.com/watch?v=mcX_4EvYka4</p>
-</div>
-<div class="section" id="terraform">
-<h2>Terraform<a class="headerlink" href="#terraform" title="Permalink to this headline">¶</a></h2>
+<p>## Just Celery</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=mcX_4EvYka4">https://www.youtube.com/watch?v=mcX_4EvYka4</a></p>
+<p>## Terraform</p>
 <ul class="simple">
-<li><p>https://medium.com/typeforms-engineering-blog/deploy-airflow-1-10-10-in-kubernetes-using-terraform-and-helm-2476f03f07d0</p></li>
+<li><p><a class="reference external" href="https://medium.com/typeforms-engineering-blog/deploy-airflow-1-10-10-in-kubernetes-using-terraform-and-helm-2476f03f07d0">https://medium.com/typeforms-engineering-blog/deploy-airflow-1-10-10-in-kubernetes-using-terraform-and-helm-2476f03f07d0</a></p></li>
 </ul>
-</div>
-<div class="section" id="troubleshooting">
-<h2>TroubleShooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<p>## TroubleShooting</p>
 <ul class="simple">
-<li><p>https://stackoverflow.com/questions/45534535/airflow-not-loading-dags-in-usr-local-airflow-dags</p></li>
-<li><p>https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/installation.html</p></li>
-<li><p>https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/customizing/user-storage.html</p></li>
-<li><p>https://github.com/jupyterhub/zero-to-jupyterhub-k8s/issues/1597</p></li>
-<li><p>https://aws.amazon.com/about-aws/whats-new/2019/12/run-serverless-kubernetes-pods-using-amazon-eks-and-aws-fargate/</p></li>
-<li><p>https://platform9.com/blog/fargate-vs-upstream-kubernetes/</p></li>
-<li><p>https://aws.amazon.com/blogs/containers/running-airflow-on-aws-fargate/</p></li>
-<li><p>https://microk8s.io/docs/addon-dashboard</p></li>
-<li><p>https://k9scli.io/</p></li>
-<li><p>https://vinayak.io/2020/09/10/day-24-jupyterhub-airflow-microk8s/</p></li>
-<li><p>https://jupyterhub.readthedocs.io/en/0.7.1/getting-started.html</p></li>
-<li><p>https://jamesdefabia.github.io/docs/user-guide/kubectl/kubectl_proxy/</p></li>
+<li><p><a class="reference external" href="https://stackoverflow.com/questions/45534535/airflow-not-loading-dags-in-usr-local-airflow-dags">https://stackoverflow.com/questions/45534535/airflow-not-loading-dags-in-usr-local-airflow-dags</a></p></li>
+<li><p><a class="reference external" href="https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/installation.html">https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/installation.html</a></p></li>
+<li><p><a class="reference external" href="https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/customizing/user-storage.html">https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/customizing/user-storage.html</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jupyterhub/zero-to-jupyterhub-k8s/issues/1597">https://github.com/jupyterhub/zero-to-jupyterhub-k8s/issues/1597</a></p></li>
+<li><p><a class="reference external" href="https://aws.amazon.com/about-aws/whats-new/2019/12/run-serverless-kubernetes-pods-using-amazon-eks-and-aws-fargate/">https://aws.amazon.com/about-aws/whats-new/2019/12/run-serverless-kubernetes-pods-using-amazon-eks-and-aws-fargate/</a></p></li>
+<li><p><a class="reference external" href="https://platform9.com/blog/fargate-vs-upstream-kubernetes/">https://platform9.com/blog/fargate-vs-upstream-kubernetes/</a></p></li>
+<li><p><a class="reference external" href="https://aws.amazon.com/blogs/containers/running-airflow-on-aws-fargate/">https://aws.amazon.com/blogs/containers/running-airflow-on-aws-fargate/</a></p></li>
+<li><p><a class="reference external" href="https://microk8s.io/docs/addon-dashboard">https://microk8s.io/docs/addon-dashboard</a></p></li>
+<li><p><a class="reference external" href="https://k9scli.io/">https://k9scli.io/</a></p></li>
+<li><p><a class="reference external" href="https://vinayak.io/2020/09/10/day-24-jupyterhub-airflow-microk8s/">https://vinayak.io/2020/09/10/day-24-jupyterhub-airflow-microk8s/</a></p></li>
+<li><p><a class="reference external" href="https://jupyterhub.readthedocs.io/en/0.7.1/getting-started.html">https://jupyterhub.readthedocs.io/en/0.7.1/getting-started.html</a></p></li>
+<li><p><a class="reference external" href="https://jamesdefabia.github.io/docs/user-guide/kubectl/kubectl_proxy/">https://jamesdefabia.github.io/docs/user-guide/kubectl/kubectl_proxy/</a></p></li>
 </ul>
-</div>
-</div>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="9_quests.html" class="btn btn-neutral float-left" title="Quests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="9_quests.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022, Tony Butzer
-
-    </p>
+    <p>&#169; Copyright 2022, Tony Butzer.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

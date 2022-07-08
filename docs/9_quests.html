@@ -1,67 +1,35 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Quests &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Engineering Notes" href="3_engineering_notes.html" />
-    <link rel="prev" title="Env Variables or metastore variables" href="2_env_vars.html" /> 
+    <link rel="next" title="&lt;no title&gt;" href="3_engineering_notes.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="2_env_vars.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> Airflow Sandbox Training in the cloud
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -69,286 +37,152 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_tasks.html">Tasks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="01_tasks.html#cleanup-smartflow-ec2-instance-butzer-eccoe-smartflow">Cleanup smartflow ec2 instance butzer-eccoe-smartflow</a></li>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul class="simple">
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="4_k8s.html">k8s</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#book-learning-kubernetes">Book Learning Kubernetes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#source">Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#terminology">Terminology</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#microk8s">microk8s</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#startup-and-shutdown">Startup and shutdown</a></li>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#dashboard">Dashboard</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#k9s">k9s</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#helm">helm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#jupyter-hub">jupyter hub</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="4_k8s.html#pvc-and-pv-notes-tbd">PVC and PV notes - tbd</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#airflow-via-helm">airflow via helm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_k8s.html#videos">videos</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="00_overview.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="00_overview.html#purpose">Purpose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_overview.html#mission">Mission</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_overview.html#objectives">Objectives</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="00_overview.html#prerequsite-steps">Prerequsite steps</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="00_overview.html#quests">Quests</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="00_overview.html#get-docker-airflow-running-in-chs">Get Docker Airflow Running in CHS</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="00_overview.html#references">References</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_env_vars.html">Env Variables or metastore variables</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_env_vars.html#todo">Todo</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quests</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#understanding-variables">0.0 Understanding Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#stac-search-task">0. Stac Search Task</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#building-the-docker-smartflow">Building the Docker smartflow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#issue">ISSUE:</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#docker-compose-trial-airflow-celery">Docker Compose Trial Airflow - Celery</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#quickstart">Quickstart</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#airflow-study">1 Airflow Study</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#prerequisites-args-and-kwargs">Prerequisites *args and *kwargs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#source">Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting Started</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#introducing-airflow">Introducing Airflow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#main-components-scheduler-workers-webserver">3 main components - scheduler; workers; webserver</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#why-airflow-pros-cons">Why Airflow PROS/CONS</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#reasons-to-choose-airflow-in-the-past-sections">Reasons to choose Airflow In the past sections,</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#reasons-not-to-choose-airflow">Reasons not to choose Airflow</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="3_engineering_notes.html">Engineering Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_engineering_notes.html#smartflow-references">smartflow references</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-tutorial-videos-document-good-to-bad">Airflow Tutorial Videos - document good to bad</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-operators">Airflow Operators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#running-airflow-with-docker-compose">Running Airflow with Docker Compose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#docker-simple-orcherstration-python-docker-starts">Docker Simple Orcherstration - python docker starts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="3_engineering_notes.html#rylie-notes">Rylie Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-scaling-celery">Airflow Scaling Celery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#just-celery">Just Celery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#terraform">Terraform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#troubleshooting">TroubleShooting</a></li>
-</ul>
-</li>
-</ul>
-
-            
-          
+</div>
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Airflow Sandbox Training in the cloud</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>Quests</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="_sources/9_quests.md.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="quests">
-<h1>Quests<a class="headerlink" href="#quests" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="understanding-variables">
-<h2>0.0 Understanding Variables<a class="headerlink" href="#understanding-variables" title="Permalink to this headline">¶</a></h2>
+             
+  <p># Quests</p>
+<p>## 0.0 Understanding Variables</p>
 <ul class="simple">
-<li><p>env variables - set in the container</p>
-<ul>
+<li><dl class="simple">
+<dt>env variables - set in the container</dt><dd><ul>
 <li><p>set ahead of time with docker compose</p></li>
 </ul>
+</dd>
+</dl>
 </li>
-<li><p>metastore</p>
-<ul>
+<li><dl class="simple">
+<dt>metastore</dt><dd><ul>
 <li><p>nav localhost:8080- admin-&gt;variables</p></li>
 <li><p>nav localhost:8080- admin-&gt;macros</p></li>
 </ul>
+</dd>
+</dl>
 </li>
-<li><p>reference https://www.youtube.com/watch?v=bRaMAD5vx3g</p></li>
+<li><p>reference <a class="reference external" href="https://www.youtube.com/watch?v=bRaMAD5vx3g">https://www.youtube.com/watch?v=bRaMAD5vx3g</a></p></li>
 </ul>
-</div>
-<div class="section" id="stac-search-task">
-<h2>0. Stac Search Task<a class="headerlink" href="#stac-search-task" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">People</span> <span class="o">-</span> <span class="n">Adrian</span> <span class="n">Gould</span>
-<span class="o">-</span> <span class="n">Code</span> <span class="n">Study</span>
-	<span class="o">-</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">smartgitlab</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">blacksky</span><span class="o">/</span><span class="n">smartflow</span><span class="o">/-/</span><span class="n">blob</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">dags</span><span class="o">/</span><span class="n">Demo_Shinbashi</span><span class="o">.</span><span class="n">py</span>
-	<span class="o">-</span> <span class="n">clone</span> <span class="n">the</span> <span class="n">repo</span> 
-<span class="o">-</span> <span class="n">Stub</span> <span class="n">out</span> <span class="n">Noops</span> <span class="k">for</span> <span class="n">main</span> <span class="n">tasks</span> <span class="ow">in</span> <span class="n">devcode</span>
-	<span class="o">-</span> <span class="n">DEPLOY</span> <span class="n">TO</span> <span class="n">airflow</span> <span class="o">-</span> <span class="k">with</span> <span class="n">makefile</span>
-</pre></div>
-</div>
-<div class="section" id="building-the-docker-smartflow">
-<h3>Building the Docker smartflow<a class="headerlink" href="#building-the-docker-smartflow" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>clone adrians github - DONE</p></li>
-<li><p>build in ~/work (build_docker dir) - DONE</p>
-<ul>
+<dl class="simple">
+<dt>## 0. Stac Search Task</dt><dd><ul class="simple">
+<li><p>People - Adrian Gould</p></li>
+<li><dl class="simple">
+<dt>Code Study</dt><dd><ul>
+<li><p><a class="reference external" href="https://smartgitlab.com/blacksky/smartflow/-/blob/main/dags/Demo_Shinbashi.py">https://smartgitlab.com/blacksky/smartflow/-/blob/main/dags/Demo_Shinbashi.py</a></p></li>
+<li><p>clone the repo</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Stub out Noops for main tasks in devcode</dt><dd><ul>
+<li><p>DEPLOY TO airflow - with makefile</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>### Building the Docker smartflow
+- clone adrians github - DONE
+- build in ~/work (build_docker dir) - DONE</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>add tony additions</p></li>
 <li><p>capture all this in build_docker/Makefile</p></li>
 </ul>
-</li>
-</ul>
-<div class="section" id="issue">
-<h4>ISSUE:<a class="headerlink" href="#issue" title="Permalink to this headline">¶</a></h4>
-<ol class="simple">
-<li><p>The docker environment is slightly different than the smart based environment</p>
-<ul class="simple">
-<li><p>the jinja variables</p>
-<ul>
+</div></blockquote>
+<p>#### ISSUE:
+1. The docker environment is slightly different than the smart based environment</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>the jinja variables</dt><dd><ul>
 <li><p>pount to s3 buckets</p></li>
 </ul>
+</dd>
+</dl>
 </li>
-<li><p>they use kubernetes</p>
-<ul>
+<li><dl class="simple">
+<dt>they use kubernetes</dt><dd><ul>
 <li><p>the sandbox uses Celery</p></li>
 </ul>
+</dd>
+</dl>
 </li>
 </ul>
-</li>
+</div></blockquote>
+<ol class="arabic simple" start="2">
 <li><p>We need to train ourselves on all things  Airflow, Kubernetes, docker-compose - meta-stores - celery</p></li>
 <li><p>We need to learn how to write Airflow operators and know which operators and task structires make sense in a best-practices sort of way.</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="docker-compose-trial-airflow-celery">
-<h3>Docker Compose Trial Airflow - Celery<a class="headerlink" href="#docker-compose-trial-airflow-celery" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="quickstart">
-<h3>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h3>
+<p>### Docker Compose Trial Airflow - Celery</p>
+<p>### Quickstart</p>
 <ul class="simple">
-<li><p>https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html</p></li>
+<li><p><a class="reference external" href="https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html">https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html</a></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="airflow-study">
-<h2>1 Airflow Study<a class="headerlink" href="#airflow-study" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
+<p>## 1 Airflow Study</p>
+<ol class="arabic simple">
 <li><p>airflow book - Data Pipelines with Apache Airflow - Harenslak</p></li>
 </ol>
-<div class="section" id="prerequisites-args-and-kwargs">
-<h3>Prerequisites *args and *kwargs<a class="headerlink" href="#prerequisites-args-and-kwargs" title="Permalink to this headline">¶</a></h3>
+<p>### Prerequisites <a href="#id1"><span class="problematic" id="id2">*</span></a>args and <a href="#id3"><span class="problematic" id="id4">*</span></a>kwargs</p>
 <ul class="simple">
-<li><p>https://code.tutsplus.com/articles/understanding-args-and-kwargs-in-python–cms-29494</p></li>
+<li><p><a class="reference external" href="https://code.tutsplus.com/articles/understanding-args-and-kwargs-in-python--cms-29494">https://code.tutsplus.com/articles/understanding-args-and-kwargs-in-python–cms-29494</a></p></li>
 <li><p>What Are Args?</p></li>
 </ul>
-<p>*args are used to pass non-keyword arguments. Examples of non-keyword arguments are fun(3,4), fun(“foo”,”bar”).</p>
-<p>*args are usually used as a measure to prevent the program from crashing if we don’t know how many arguments will be passed to the function. This is used in C++ as well as other programming languages.
+<p><a href="#id5"><span class="problematic" id="id6">*</span></a>args are used to pass non-keyword arguments. Examples of non-keyword arguments are fun(3,4), fun(“foo”,”bar”).</p>
+<p><a href="#id7"><span class="problematic" id="id8">*</span></a>args are usually used as a measure to prevent the program from crashing if we don’t know how many arguments will be passed to the function. This is used in C++ as well as other programming languages.
 What Are Kwargs?</p>
 <ul class="simple">
-<li><p>**kwargs is a dictionary of keyword arguments.
-The ** allows us to pass any number of keyword arguments. A keyword argument is basically a dictionary.</p></li>
+<li><p><a href="#id9"><span class="problematic" id="id10">**</span></a>kwargs is a dictionary of keyword arguments.</p></li>
 </ul>
+<p>The ** allows us to pass any number of keyword arguments. A keyword argument is basically a dictionary.</p>
 <p>An example of a keyword argument is fun(foo=2,bar=7).</p>
 <ul class="simple">
 <li><p>You can call the function with any arguments you want.</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">capital_cities</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span> 
-    <span class="c1"># initialize an empty list to store the result</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-	<span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;The capital city of {} is {}&quot;</span><span class="o">.</span><span class="n">format</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="n">value</span><span class="p">))</span>
- 
-    <span class="k">return</span> <span class="n">result</span>
-<span class="k">print</span> <span class="p">(</span><span class="n">capital_cities</span><span class="p">(</span><span class="n">China</span> <span class="o">=</span> <span class="s2">&quot;Beijing&quot;</span><span class="p">,</span><span class="n">Cairo</span> <span class="o">=</span> <span class="s2">&quot;Egypt&quot;</span><span class="p">,</span><span class="n">Rome</span> <span class="o">=</span> <span class="s2">&quot;Italy&quot;</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="source">
-<h3>Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h3>
-<p>References to elements in the code, scripts, or specific Airflow classes/variables/values are often in italics to help distinguish them from the surrounding text. Source code for all examples and instructions to run them using Docker and Docker Compose are available in our GitHub repository (</p>
-<ul class="simple">
-<li><p>https://github.com/BasPH/data-pipelines-with-apache-airflow) and can be downloaded via the book’s website (</p></li>
-<li><p>www.manning.com/books/data-pipelines-with-apache-airflow).</p></li>
-</ul>
-</div>
-<div class="section" id="getting-started">
-<h3>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
+<p><a href="#id11"><span class="problematic" id="id12">``</span></a>` python
+def capital_cities(<a href="#id13"><span class="problematic" id="id14">**</span></a>kwargs):</p>
+<blockquote>
+<div><p># initialize an empty list to store the result
+result = []
+for key, value in kwargs.items():</p>
+<blockquote>
+<div><p>result.append(“The capital city of {} is {}”.format (key,value))</p>
+</div></blockquote>
+<p>return result</p>
+</div></blockquote>
+<p>print (capital_cities(China = “Beijing”,Cairo = “Egypt”,Rome = “Italy”))</p>
+<p><a href="#id15"><span class="problematic" id="id16">``</span></a><a href="#id17"><span class="problematic" id="id18">`</span></a></p>
+<p>### Source</p>
+<p>References to elements in the code, scripts, or specific Airflow classes/variables/values are often in italics to help distinguish them from the surrounding text. Source code for all examples and instructions to run them using Docker and Docker Compose are available in our GitHub repository (
+- <a class="reference external" href="https://github.com/BasPH/data-pipelines-with-apache-airflow">https://github.com/BasPH/data-pipelines-with-apache-airflow</a>) and can be downloaded via the book’s website (
+- www.manning.com/books/data-pipelines-with-apache-airflow).</p>
+<p>### Getting Started</p>
 <ul class="simple">
 <li><p>data pipelines</p></li>
 <li><p>airflow’s role</p></li>
@@ -357,67 +191,64 @@ The ** allows us to pass any number of keyword arguments. A keyword argument is 
 <li><p>templating</p></li>
 <li><p>then on to part 2</p></li>
 <li><p>airflow is an orchetrator - the spider in the web</p></li>
-<li><p>weather task example</p>
-<ul>
+<li><dl class="simple">
+<dt>weather task example</dt><dd><ul>
 <li><p>fetch weather data via ap</p></li>
 <li><p>clean and organize weather data</p></li>
 <li><p>push cleanded data to weather dashboard</p></li>
 </ul>
+</dd>
+</dl>
 </li>
 </ul>
-<blockquote>
-<div><p>This type of graph is typically called a directed acyclic graph (DAG), as the graph contains directed edges and does not contain any loops or cycles (acyclic).</p>
-</div></blockquote>
-<p>Name Originated at1 Workflows defined in Written in Scheduling Backfilling User interface2 Installation platform Horizontally scalable</p>
-<ul class="simple">
-<li><p>Airflow Airbnb Python Python Yes Yes Yes Anywhere Yes</p></li>
-<li><p>Argo Applatix YAML Go Third party3 Yes Kubernetes Yes</p></li>
-<li><p>Azkaban LinkedIn YAML Java Yes No Yes Anywhere Conductor Netflix JSON Java No Yes Anywhere Yes</p></li>
-<li><p>Luigi Spotify Python Python No Yes Yes Anywhere Yes</p></li>
-<li><p>Make Custom DSL C No No No Anywhere No</p></li>
-<li><p>Metaflow Netflix Python Python No No Anywhere Yes</p></li>
-<li><p>Nifi NSA UI Java Yes No Yes Anywhere Yes Oozie</p></li>
-</ul>
+<p>&gt; This type of graph is typically called a directed acyclic graph (DAG), as the graph contains directed edges and does not contain any loops or cycles (acyclic).</p>
+<p>Name Originated at1 Workflows defined in Written in Scheduling Backfilling User interface2 Installation platform Horizontally scalable
+- Airflow Airbnb Python Python Yes Yes Yes Anywhere Yes
+- Argo Applatix YAML Go Third party3 Yes Kubernetes Yes
+- Azkaban LinkedIn YAML Java Yes No Yes Anywhere Conductor Netflix JSON Java No Yes Anywhere Yes
+- Luigi Spotify Python Python No Yes Yes Anywhere Yes
+- Make Custom DSL C No No No Anywhere No
+- Metaflow Netflix Python Python No No Anywhere Yes
+- Nifi NSA UI Java Yes No Yes Anywhere Yes Oozie</p>
 <p>de Ruiter, Julian; Harenslak, Bas. Data Pipelines with Apache Airflow (p. 9). Manning. Kindle Edition.</p>
-</div>
-<div class="section" id="introducing-airflow">
-<h3>Introducing Airflow<a class="headerlink" href="#introducing-airflow" title="Permalink to this headline">¶</a></h3>
+<p>### Introducing Airflow</p>
 <ul class="simple">
-<li><p>define DAGS using python code.</p>
-<ul>
+<li><dl class="simple">
+<dt>define DAGS using python code.</dt><dd><ul>
 <li><p>set of tasks</p></li>
 <li><p>metadata</p></li>
 <li><p>scheduling</p></li>
 </ul>
+</dd>
+</dl>
 </li>
-<li><p>airflow extensions -</p>
-<ul>
+<li><dl class="simple">
+<dt>airflow extensions -</dt><dd><ul>
 <li><p>databases</p></li>
 <li><p>cloud services</p></li>
 <li><p>notification linkages</p></li>
 </ul>
+</dd>
+</dl>
 </li>
 </ul>
-<div class="section" id="main-components-scheduler-workers-webserver">
-<h4>3 main components - scheduler; workers; webserver<a class="headerlink" href="#main-components-scheduler-workers-webserver" title="Permalink to this headline">¶</a></h4>
+<p>#### 3 main components - scheduler; workers; webserver</p>
 <ul class="simple">
 <li><p>airflow metastore(database) key component for linkages</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="why-airflow-pros-cons">
-<h3>Why Airflow PROS/CONS<a class="headerlink" href="#why-airflow-pros-cons" title="Permalink to this headline">¶</a></h3>
-<p>o</p>
-<div class="section" id="reasons-to-choose-airflow-in-the-past-sections">
-<h4>Reasons to choose Airflow In the past sections,<a class="headerlink" href="#reasons-to-choose-airflow-in-the-past-sections" title="Permalink to this headline">¶</a></h4>
+<p>### Why Airflow PROS/CONS</p>
+<p>o
+#### Reasons to choose Airflow In the past sections,</p>
 <p>we’ve already described several key feature</p>
 <p>s that make Airflow ideal for implementing batch-oriented data pipelines. In summary, these include the following:</p>
 <ul class="simple">
 <li><p>The ability to implement pipelines using Python code allows you to create arbitrarily complex pipelines using anything you can dream up in Python.</p></li>
-<li><p>The Python foundation of Airflow makes it easy to extend and add integrations with many different systems.</p>
-<ul>
+<li><dl class="simple">
+<dt>The Python foundation of Airflow makes it easy to extend and add integrations with many different systems.</dt><dd><ul>
 <li><p>In fact, the Airflow community has already developed a rich collection of extensions that allow Airflow to integrate with many different types of databases, cloud services, and so on.</p></li>
 </ul>
+</dd>
+</dl>
 </li>
 <li><p>Rich scheduling semantics allow you to run your pipelines at regular intervals and build efficient pipelines that use incremental processing to avoid expensive recomputation of existing results.</p></li>
 <li><p>Features such as backfilling enable you to easily (re)process historical data, allowing you to recompute any derived data sets after making changes to your code.</p></li>
@@ -425,74 +256,48 @@ The ** allows us to pass any number of keyword arguments. A keyword argument is 
 <li><p>Open Source !</p></li>
 <li><p>Famous Company Adoption AIRBNB etc…</p></li>
 </ul>
-</div>
-<div class="section" id="reasons-not-to-choose-airflow">
-<h4>Reasons not to choose Airflow<a class="headerlink" href="#reasons-not-to-choose-airflow" title="Permalink to this headline">¶</a></h4>
+<p>#### Reasons not to choose Airflow</p>
 <ul class="simple">
 <li><p>Not as hood for highly fynamic pipelines</p></li>
 <li><p>Require Python rerxperience</p></li>
 <li><p>I would add the significant technology stack is a barrier - for small teams or silo’ed teams …</p></li>
 </ul>
 <p>de Ruiter, Julian; Harenslak, Bas. Data Pipelines with Apache Airflow (p. 17). Manning. Kindle Edition.</p>
-<p>Airflow consists of three core components:</p>
-<ul class="simple">
-<li><p>the webserver,</p></li>
-<li><p>the scheduler,</p></li>
-<li><p>and the worker processes,
-which work together to schedule tasks from your data pipelines and help you monitor their results.</p></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+<p>Airflow consists of three core components:
+- the webserver,
+- the scheduler,
+- and the worker processes,
+which work together to schedule tasks from your data pipelines and help you monitor their results.</p>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="3_engineering_notes.html" class="btn btn-neutral float-right" title="Engineering Notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="2_env_vars.html" class="btn btn-neutral float-left" title="Env Variables or metastore variables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2_env_vars.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="3_engineering_notes.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022, Tony Butzer
-
-    </p>
+    <p>&#169; Copyright 2022, Tony Butzer.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

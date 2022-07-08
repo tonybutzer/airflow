@@ -1,65 +1,33 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Oahe Lidar &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;no title&gt; &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-  
-
-  
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> Airflow Sandbox Training in the cloud
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -67,216 +35,66 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../01_tasks.html">Tasks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../01_tasks.html#cleanup-smartflow-ec2-instance-butzer-eccoe-smartflow">Cleanup smartflow ec2 instance butzer-eccoe-smartflow</a></li>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul class="simple">
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../4_k8s.html">k8s</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#book-learning-kubernetes">Book Learning Kubernetes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#source">Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#terminology">Terminology</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#microk8s">microk8s</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#startup-and-shutdown">Startup and shutdown</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#dashboard">Dashboard</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#k9s">k9s</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#helm">helm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#jupyter-hub">jupyter hub</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../4_k8s.html#pvc-and-pv-notes-tbd">PVC and PV notes - tbd</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#airflow-via-helm">airflow via helm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../4_k8s.html#videos">videos</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../00_overview.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#purpose">Purpose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#mission">Mission</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#objectives">Objectives</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../00_overview.html#prerequsite-steps">Prerequsite steps</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../00_overview.html#quests">Quests</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../00_overview.html#get-docker-airflow-running-in-chs">Get Docker Airflow Running in CHS</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../00_overview.html#references">References</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../2_env_vars.html">Env Variables or metastore variables</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../2_env_vars.html#todo">Todo</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../9_quests.html">Quests</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../9_quests.html#understanding-variables">0.0 Understanding Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../9_quests.html#stac-search-task">0. Stac Search Task</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#building-the-docker-smartflow">Building the Docker smartflow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#issue">ISSUE:</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#docker-compose-trial-airflow-celery">Docker Compose Trial Airflow - Celery</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#quickstart">Quickstart</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../9_quests.html#airflow-study">1 Airflow Study</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#prerequisites-args-and-kwargs">Prerequisites *args and *kwargs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#source">Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#getting-started">Getting Started</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#introducing-airflow">Introducing Airflow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#main-components-scheduler-workers-webserver">3 main components - scheduler; workers; webserver</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../9_quests.html#why-airflow-pros-cons">Why Airflow PROS/CONS</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#reasons-to-choose-airflow-in-the-past-sections">Reasons to choose Airflow In the past sections,</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../9_quests.html#reasons-not-to-choose-airflow">Reasons not to choose Airflow</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../3_engineering_notes.html">Engineering Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../3_engineering_notes.html#smartflow-references">smartflow references</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#airflow-tutorial-videos-document-good-to-bad">Airflow Tutorial Videos - document good to bad</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#airflow-operators">Airflow Operators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#running-airflow-with-docker-compose">Running Airflow with Docker Compose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#docker-simple-orcherstration-python-docker-starts">Docker Simple Orcherstration - python docker starts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../3_engineering_notes.html#rylie-notes">Rylie Notes</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#airflow-scaling-celery">Airflow Scaling Celery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#just-celery">Just Celery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#terraform">Terraform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../3_engineering_notes.html#troubleshooting">TroubleShooting</a></li>
-</ul>
-</li>
-</ul>
-
-            
-          
+</div>
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Airflow Sandbox Training in the cloud</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
-      <li>Oahe Lidar</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="../_sources/Attic/10_data.md.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="oahe-lidar">
-<h1>Oahe Lidar<a class="headerlink" href="#oahe-lidar" title="Permalink to this headline">¶</a></h1>
+             
+  <p># Oahe Lidar</p>
 <ul class="simple">
-<li><p>https://portal.opentopography.org/usgsDataset?dsid=SD_NRCS_QSI_A3_2017</p></li>
+<li><p><a class="reference external" href="https://portal.opentopography.org/usgsDataset?dsid=SD_NRCS_QSI_A3_2017">https://portal.opentopography.org/usgsDataset?dsid=SD_NRCS_QSI_A3_2017</a></p></li>
 </ul>
-</div>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022, Tony Butzer
-
-    </p>
+    <p>&#169; Copyright 2022, Tony Butzer.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
