@@ -83,6 +83,11 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">k8s</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#book-learning-kubernetes">Book Learning Kubernetes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#source">Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#terminology">Terminology</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#microk8s">microk8s</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#startup-and-shutdown">Startup and shutdown</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dashboard">Dashboard</a></li>
@@ -95,6 +100,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#airflow-via-helm">airflow via helm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#videos">videos</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="00_overview.html">Overview</a><ul>
@@ -156,6 +162,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-scaling-celery">Airflow Scaling Celery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#just-celery">Just Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#terraform">Terraform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#troubleshooting">TroubleShooting</a></li>
 </ul>
 </li>
 </ul>
@@ -224,6 +232,30 @@
             
   <div class="section" id="k8s">
 <h1>k8s<a class="headerlink" href="#k8s" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="book-learning-kubernetes">
+<h2>Book Learning Kubernetes<a class="headerlink" href="#book-learning-kubernetes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="source">
+<h3>Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Source code All of the source code for the demos and do-it-yourself solutions is available at</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>https://bitbucket.org/epobb/kubernetesbookfiles
+It can be downloaded as a ZIP file, or if you installed GIT you can simply type:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">bitbucket</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">epobb</span><span class="o">/</span><span class="n">kubernetesbookfiles</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>Weil, Arnaud. Learn Kubernetes - Container orchestration using Docker (Learn Collection) . leanpub.com. Kindle Edition.</p>
+</div>
+<div class="section" id="terminology">
+<h3>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>https://kubernetes.io/docs/concepts/overview/components/</p></li>
+</ul>
+<p><img alt="cluster k8s" src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" /></p>
+</div>
+</div>
 <div class="section" id="microk8s">
 <h2>microk8s<a class="headerlink" href="#microk8s" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="startup-and-shutdown">
@@ -244,6 +276,7 @@ snap disable microk8s
 <h3>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 –address 0.0.0.0</p></li>
+<li><p>microk8s kubectl create token default</p></li>
 </ul>
 </div>
 </div>
@@ -301,6 +334,12 @@ snap disable microk8s
 </ul>
 </li>
 <li><p>microk8s helm3 –debug upgrade –install jupyterhub jupyterhub/jupyterhub –namespace jhub</p></li>
+</ul>
+</div>
+<div class="section" id="videos">
+<h2>videos<a class="headerlink" href="#videos" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>https://www.youtube.com/watch?v=wN6FlmPy2qA</p></li>
 </ul>
 </div>
 </div>

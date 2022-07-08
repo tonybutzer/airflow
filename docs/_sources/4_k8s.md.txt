@@ -1,5 +1,22 @@
 # k8s
 
+## Book Learning Kubernetes
+#### Source
+>Source code All of the source code for the demos and do-it-yourself solutions is available at 
+- https://bitbucket.org/epobb/kubernetesbookfiles 
+It can be downloaded as a ZIP file, or if you installed GIT you can simply type: 
+```
+git clone https://bitbucket.org/epobb/kubernetesbookfiles.git
+```
+
+Weil, Arnaud. Learn Kubernetes - Container orchestration using Docker (Learn Collection) . leanpub.com. Kindle Edition. 
+
+#### Terminology
+
+- https://kubernetes.io/docs/concepts/overview/components/
+
+![cluster k8s](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
+
 ## microk8s
 
 ### Startup and shutdown
@@ -14,6 +31,7 @@ snap disable microk8s
 
 ### Dashboard
 - microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 --address 0.0.0.0
+- microk8s kubectl create token default
 
 ## k9s
 
@@ -50,3 +68,7 @@ snap disable microk8s
 	--namespace $NAMESPACE --version=0.9.0 --values values.yml
 
 -  microk8s helm3 --debug upgrade --install jupyterhub jupyterhub/jupyterhub --namespace jhub
+
+## videos
+
+- https://www.youtube.com/watch?v=wN6FlmPy2qA
