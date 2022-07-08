@@ -3,11 +3,12 @@
 ## Cleanup smartflow ec2 instance butzer-eccoe-smartflow 
 
 - test butzer-dev
-	- install miniconda on efs
-	- test jupyter - clone airflow
+	- [x] install miniconda on efs
+	- [x] test jupyter - clone airflow
 	- install snapd
 	- install microk8s
-	- test docker compose airflow-celery
+	- [x] test docker compose airflow-celery
+		- [x] install docker compose
 
 - [x] mars
 - [ ] venus
