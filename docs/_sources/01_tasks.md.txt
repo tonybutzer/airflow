@@ -1,4 +1,16 @@
 # Tasks
+
+## Run Airflow on microk8s
+- [ ] Find Article on Airflow on k8s
+- [ ] document steps
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 ## Remove Unused Systems From Eccoe -
 
 - [x]  stopped    butzer-mahesh-dev-prototype   10.12.69.99     t3.large        60.736
