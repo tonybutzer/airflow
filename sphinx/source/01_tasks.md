@@ -19,6 +19,3 @@
 	- [x] install microk8s
 	- [x] test docker compose airflow-celery
 		- [x] install docker compose
-
-- [x] mars
-- [ ] venus
