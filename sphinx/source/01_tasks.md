@@ -6,7 +6,7 @@
 - [ ]  stopped           butzer-lidar-explore   10.12.69.95  t3a.2xlarge       219.584
 - [ ]  stopped    butzer-iarpa1-tony-dev-temp  10.12.68.242  t3a.2xlarge       219.584
 
-#### butzer-dev - no speak ssh with my pem
+#### - [ ] butzer-dev - no speak ssh with my pem
 
 
 
