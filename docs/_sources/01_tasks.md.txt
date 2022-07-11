@@ -5,6 +5,8 @@
 ## Security Group or a Bunch of ssh port forwards
 
 - [ ] create terraform security group and test
+- [x] port forward the airflow webserver by:
+	-  k -n airflow port-forward service/airflow-webserver 8080:8080 --address 0.0.0.0
 
 - https://cloudcasts.io/course/terraform/security-groups
 	- https://www.cloudwalker.io/2020/09/13/terraform-security-groups-ec2-instances/
