@@ -83,6 +83,11 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Tasks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#understand-kubernetes-proxies">Understand Kubernetes Proxies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#proxy-8080">Proxy 8080</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#port-forwarding-is-better">Port forwarding is better</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#run-airflow-on-microk8s">Run Airflow on microk8s</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#remove-unused-systems-from-eccoe">Remove Unused Systems From Eccoe -</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#butzer-dev-no-speak-ssh-with-my-pem">- [ ] butzer-dev - no speak ssh with my pem</a></li>
@@ -241,11 +246,62 @@
             
   <div class="section" id="tasks">
 <h1>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="understand-kubernetes-proxies">
+<h2>Understand Kubernetes Proxies<a class="headerlink" href="#understand-kubernetes-proxies" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<span class="n">kubectl</span> <span class="n">create</span> <span class="n">deployment</span> <span class="n">node</span><span class="o">-</span><span class="n">hello</span> <span class="o">--</span><span class="n">image</span><span class="o">=</span><span class="n">gcr</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">google</span><span class="o">-</span><span class="n">samples</span><span class="o">/</span><span class="n">node</span><span class="o">-</span><span class="n">hello</span><span class="p">:</span><span class="mf">1.0</span> <span class="o">--</span><span class="n">port</span><span class="o">=</span><span class="mi">9090</span>
+<span class="n">alias</span> <span class="n">k</span><span class="o">=</span><span class="s1">&#39;microk8s kubectl&#39;</span>
+<span class="n">k</span> <span class="n">get</span> <span class="n">pods</span>
+
+<span class="n">kubectl</span> <span class="n">proxy</span> <span class="o">--</span><span class="n">port</span><span class="o">=</span><span class="mi">9090</span>
+
+<span class="n">curl</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">9090</span>
+
+<span class="n">curl</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">9090</span><span class="o">/</span><span class="n">api</span><span class="o">/</span>
+
+<span class="n">curl</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">9090</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">namespaces</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">pods</span>
+</pre></div>
+</div>
+<div class="section" id="proxy-8080">
+<h3>Proxy 8080<a class="headerlink" href="#proxy-8080" title="Permalink to this headline">¶</a></h3>
+<p>kubectl proxy –port=8080</p>
+</div>
+<div class="section" id="port-forwarding-is-better">
+<h3>Port forwarding is better<a class="headerlink" href="#port-forwarding-is-better" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
 <div class="section" id="run-airflow-on-microk8s">
 <h2>Run Airflow on microk8s<a class="headerlink" href="#run-airflow-on-microk8s" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>[ ] Find Article on Airflow on k8s</p></li>
-<li><p>[ ] document steps</p></li>
+<li><p>[x] Find Article on Airflow on k8s
+-https://vinayak.io/2020/09/10/day-24-jupyterhub-airflow-microk8s/</p></li>
+<li><p>[ ] document steps</p>
+<ul>
+<li><p>[ ] get micrk8s running via snap - status helm</p>
+<ul>
+<li><p>microk8s status</p></li>
+<li><p>microk8s enable helm</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>[ ] airflow helm</p>
+<ul>
+<li><p>https://airflow.apache.org/docs/helm-chart/stable/index.html</p></li>
+<li><p>helm repo add apache-airflow https://airflow.apache.org</p></li>
+<li><p>microk8s helm3 repo add apache-airflow https://airflow.apache.org</p></li>
+<li><p>helm upgrade –install airflow apache-airflow/airflow –namespace airflow –create-namespace</p></li>
+<li><p>get default values for override possibilities</p>
+<ul>
+<li><p>microk8s helm3 show values stable/airflow &gt; values.yml</p></li>
+</ul>
+</li>
+<li><p>[ ]</p></li>
+<li><p>[ ]</p></li>
+<li><p>[ ]</p></li>
+<li><p>[ ]</p></li>
+</ul>
+</li>
 <li><p>[ ]</p></li>
 <li><p>[ ]</p></li>
 <li><p>[ ]</p></li>
