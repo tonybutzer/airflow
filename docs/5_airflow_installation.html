@@ -269,6 +269,17 @@
 <h2>Airflow and Microk8s<a class="headerlink" href="#airflow-and-microk8s" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="create-base-system-via-terraform">
 <h3>Create Base System via Terraform<a class="headerlink" href="#create-base-system-via-terraform" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>/home/ec2-user/opt/airflow/tfinfra/butzer-sf-incubator</p></li>
+<li><p>make init</p></li>
+<li><p>make apply</p></li>
+<li><p>costs       # pinstance</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[ec2-user@ip-10-12-68-177 butzer-sf-incubator]$ costs | grep sf
+6  running            butzer-sf-incubator  10.12.69.170  t3a.2xlarge       219.584
+6  running            butzer-sf-incubator  10.12.69.170  t3a.2xlarge       219.584
+</pre></div>
+</div>
 </div>
 <div class="section" id="install-microk8s">
 <h3>Install Microk8s<a class="headerlink" href="#install-microk8s" title="Permalink to this headline">¶</a></h3>
