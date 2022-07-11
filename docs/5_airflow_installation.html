@@ -87,6 +87,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#create-base-system-via-terraform">Create Base System via Terraform</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#install-microk8s">Install Microk8s</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#install-snap-snapd">Install SNAP/SNAPD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-microk8s-via-snapd">Install Microk8s via SNAPD</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#install-airflow-via-helm">Install Airflow via Helm</a><ul>
@@ -292,8 +293,19 @@
 <li><p>NOTE: snapd does not like  symlinks</p></li>
 <li><p>cd pkg</p></li>
 <li><p>./install_snap_amazon_linux.sh</p></li>
-<li><p>[ ] test of snap on incubator complete?</p></li>
+<li><p>sudo systemctl enable –now snapd.socket</p></li>
+<li><p>[x] test of snap on incubator complete?</p></li>
 </ul>
+</div>
+<div class="section" id="install-microk8s-via-snapd">
+<h4>Install Microk8s via SNAPD<a class="headerlink" href="#install-microk8s-via-snapd" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>sudo snap install microk8s –classic</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">usermod</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">G</span> <span class="n">microk8s</span> <span class="n">ec2</span><span class="o">-</span><span class="n">user</span>
+<span class="n">sudo</span> <span class="n">chown</span> <span class="o">-</span><span class="n">f</span> <span class="o">-</span><span class="n">R</span> <span class="n">ec2</span><span class="o">-</span><span class="n">user</span> <span class="o">~/.</span><span class="n">kube</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="install-airflow-via-helm">

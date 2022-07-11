@@ -24,7 +24,20 @@
 - cd pkg
 - ./install_snap_amazon_linux.sh
 
-- [ ] test of snap on incubator complete?
+- sudo systemctl enable --now snapd.socket
+
+- [x] test of snap on incubator complete?
+
+#### Install Microk8s via SNAPD
+
+-  sudo snap install microk8s --classic
+
+```
+sudo usermod -a -G microk8s ec2-user
+sudo chown -f -R ec2-user ~/.kube
+```
+
+
 
 ### Install Airflow via Helm
 
