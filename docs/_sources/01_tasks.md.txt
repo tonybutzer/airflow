@@ -4,7 +4,8 @@
 
 ## Security Group or a Bunch of ssh port forwards
 
-- [ ] create terraform security group and test
+- [x] create terraform security group and test
+	- [ ] todo - add more rules to this sg.tf file
 - [x] port forward the airflow webserver by:
 	-  k -n airflow port-forward service/airflow-webserver 8080:8080 --address 0.0.0.0
 

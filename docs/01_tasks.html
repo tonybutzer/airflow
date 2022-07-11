@@ -254,7 +254,11 @@
 <div class="section" id="security-group-or-a-bunch-of-ssh-port-forwards">
 <h2>Security Group or a Bunch of ssh port forwards<a class="headerlink" href="#security-group-or-a-bunch-of-ssh-port-forwards" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>[ ] create terraform security group and test</p></li>
+<li><p>[x] create terraform security group and test</p>
+<ul>
+<li><p>[ ] todo - add more rules to this sg.tf file</p></li>
+</ul>
+</li>
 <li><p>[x] port forward the airflow webserver by:</p>
 <ul>
 <li><p>k -n airflow port-forward service/airflow-webserver 8080:8080 –address 0.0.0.0</p></li>
