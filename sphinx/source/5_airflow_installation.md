@@ -35,6 +35,10 @@
 ```
 sudo usermod -a -G microk8s ec2-user
 sudo chown -f -R ec2-user ~/.kube
+
+#### Logoff and on to add group
+
+microk8s status
 ```
 
 
