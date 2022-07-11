@@ -348,6 +348,12 @@ dashboard-metrics-scraper   ClusterIP   10.152.183.173   &lt;none&gt;        800
 <h5>Port Forward The Dashboard<a class="headerlink" href="#port-forward-the-dashboard" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><p>microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 8000:443 –address 0.0.0.0</p></li>
+<li><p>https://10.12.69.170:8000 #### EXAMPLE- accept the risk - next the stupid token</p></li>
+<li><p>Token</p>
+<ul>
+<li><p>microk8s kubectl create token default</p></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
