@@ -88,6 +88,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#install-microk8s">Install Microk8s</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#install-snap-snapd">Install SNAP/SNAPD</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#install-microk8s-via-snapd">Install Microk8s via SNAPD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enable-kubernetes-key-services">Enable Kubernetes Key Services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-k8s-dashboard-access">Test k8s Dashboard Access</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#install-airflow-via-helm">Install Airflow via Helm</a><ul>
@@ -309,6 +311,44 @@
 
 <span class="n">microk8s</span> <span class="n">status</span>
 </pre></div>
+</div>
+</div>
+<div class="section" id="enable-kubernetes-key-services">
+<h4>Enable Kubernetes Key Services<a class="headerlink" href="#enable-kubernetes-key-services" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">microk8s</span> <span class="n">enable</span> <span class="n">dns</span>
+<span class="n">microk8s</span> <span class="n">enable</span> <span class="n">dashboard</span>
+<span class="n">microk8s</span> <span class="n">enable</span> <span class="n">helm3</span>
+<span class="n">microk8s</span> <span class="n">status</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-k8s-dashboard-access">
+<h4>Test k8s Dashboard Access<a class="headerlink" href="#test-k8s-dashboard-access" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>This is sort of complicated and annoying – tony.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>alias k=’microk8s kubectl’</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">k</span> <span class="n">get</span> <span class="n">namespaces</span>
+
+<span class="n">k</span> <span class="n">get</span> <span class="n">svc</span> <span class="o">-</span><span class="n">n</span> <span class="n">kube</span><span class="o">-</span><span class="n">system</span> 
+</pre></div>
+</div>
+<hr class="docutils" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[ec2-user@ip-10-12-69-170 ~]$ k get svc -n kube-system
+NAME                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE
+kube-dns                    ClusterIP   10.152.183.10    &lt;none&gt;        53/UDP,53/TCP,9153/TCP   5m34s
+metrics-server              ClusterIP   10.152.183.65    &lt;none&gt;        443/TCP                  5m5s
+kubernetes-dashboard        ClusterIP   10.152.183.19    &lt;none&gt;        443/TCP                  4m57s
+dashboard-metrics-scraper   ClusterIP   10.152.183.173   &lt;none&gt;        8000/TCP                 4m57s
+</pre></div>
+</div>
+<div class="section" id="port-forward-the-dashboard">
+<h5>Port Forward The Dashboard<a class="headerlink" href="#port-forward-the-dashboard" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li><p>microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 8000:443 –address 0.0.0.0</p></li>
+</ul>
 </div>
 </div>
 </div>
