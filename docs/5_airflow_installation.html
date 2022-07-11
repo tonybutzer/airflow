@@ -85,7 +85,10 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Airflow Installion Steps</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#airflow-and-microk8s">Airflow and Microk8s</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#create-base-system-via-terraform">Create Base System via Terraform</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#install-microk8s">Install Microk8s</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-microk8s">Install Microk8s</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#install-snap-snapd">Install SNAP/SNAPD</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#install-airflow-via-helm">Install Airflow via Helm</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#airflow-helm-chart-study-key-elements">Airflow Helm Chart Study Key Elements</a></li>
 </ul>
@@ -283,6 +286,15 @@
 </div>
 <div class="section" id="install-microk8s">
 <h3>Install Microk8s<a class="headerlink" href="#install-microk8s" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="install-snap-snapd">
+<h4>Install SNAP/SNAPD<a class="headerlink" href="#install-snap-snapd" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>NOTE: snapd does not like  symlinks</p></li>
+<li><p>cd pkg</p></li>
+<li><p>./install_snap_amazon_linux.sh</p></li>
+<li><p>[ ] test of snap on incubator complete?</p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="install-airflow-via-helm">
 <h3>Install Airflow via Helm<a class="headerlink" href="#install-airflow-via-helm" title="Permalink to this headline">¶</a></h3>

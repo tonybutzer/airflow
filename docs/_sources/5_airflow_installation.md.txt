@@ -18,6 +18,14 @@
 ### Install Microk8s
 
 
+#### Install SNAP/SNAPD
+- NOTE: snapd does not like  symlinks
+
+- cd pkg
+- ./install_snap_amazon_linux.sh
+
+- [ ] test of snap on incubator complete?
+
 ### Install Airflow via Helm
 
 #### Airflow Helm Chart Study Key Elements
