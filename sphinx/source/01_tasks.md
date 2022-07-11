@@ -1,5 +1,12 @@
 # Tasks
 
+## Security Group or a Bunch of ssh port forwards
+
+- https://cloudcasts.io/course/terraform/security-groups
+	- https://www.cloudwalker.io/2020/09/13/terraform-security-groups-ec2-instances/
+- https://stackoverflow.com/questions/29936948/ssh-l-forward-multiple-ports
+
+
 ## Understand Kubernetes Proxies
 
 ```
@@ -23,7 +30,6 @@ curl http://localhost:9090/api/v1/namespaces/default/pods
 
 kubectl proxy --port=8080
 
-#### Port forwarding is better 
 
 
 ## Run Airflow on microk8s
