@@ -1,10 +1,18 @@
 # Tasks
 
+## write installation guide
+
 ## Security Group or a Bunch of ssh port forwards
+
+- [ ] create terraform security group and test
 
 - https://cloudcasts.io/course/terraform/security-groups
 	- https://www.cloudwalker.io/2020/09/13/terraform-security-groups-ec2-instances/
 - https://stackoverflow.com/questions/29936948/ssh-l-forward-multiple-ports
+
+
+## So port forward, proxy or load balancer for kubernetes and airflow?
+- TBD
 
 
 ## Understand Kubernetes Proxies
