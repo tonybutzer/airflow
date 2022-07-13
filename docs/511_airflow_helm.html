@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Airflow Installion Steps &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
+  <title>Airflow Helm &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tasks" href="01_tasks.html" />
-    <link rel="prev" title="Airflow on Kubernetes" href="51_airflow_over_k8s.html" /> 
+    <link rel="next" title="Airflow on Kubernetes" href="51_airflow_over_k8s.html" />
+    <link rel="prev" title="v2 - Welcome to Airflow Training Tony" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,7 +82,7 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="511_airflow_helm.html">Airflow Helm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Airflow Helm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="51_airflow_over_k8s.html">Airflow on Kubernetes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="51_airflow_over_k8s.html#step-1-read-this">Step 1 Read this:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="51_airflow_over_k8s.html#default-helm3-approach">Default Helm3 Approach</a></li>
@@ -96,23 +96,23 @@
 <li class="toctree-l2"><a class="reference internal" href="51_airflow_over_k8s.html#more">more …</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Airflow Installion Steps</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#airflow-and-microk8s">Airflow and Microk8s</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-base-system-via-terraform">Create Base System via Terraform</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#install-microk8s">Install Microk8s</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#install-snap-snapd">Install SNAP/SNAPD</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#install-microk8s-via-snapd">Install Microk8s via SNAPD</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#enable-kubernetes-key-services">Enable Kubernetes Key Services</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#test-k8s-dashboard-access">Test k8s Dashboard Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_airflow_installation.html">Airflow Installion Steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_airflow_installation.html#airflow-and-microk8s">Airflow and Microk8s</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="5_airflow_installation.html#create-base-system-via-terraform">Create Base System via Terraform</a></li>
+<li class="toctree-l3"><a class="reference internal" href="5_airflow_installation.html#install-microk8s">Install Microk8s</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="5_airflow_installation.html#install-snap-snapd">Install SNAP/SNAPD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="5_airflow_installation.html#install-microk8s-via-snapd">Install Microk8s via SNAPD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="5_airflow_installation.html#enable-kubernetes-key-services">Enable Kubernetes Key Services</a></li>
+<li class="toctree-l4"><a class="reference internal" href="5_airflow_installation.html#test-k8s-dashboard-access">Test k8s Dashboard Access</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#install-airflow-via-helm">Install Airflow via Helm</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#airflow-helm-chart-study-key-elements">Airflow Helm Chart Study Key Elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="5_airflow_installation.html#install-airflow-via-helm">Install Airflow via Helm</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="5_airflow_installation.html#airflow-helm-chart-study-key-elements">Airflow Helm Chart Study Key Elements</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#configure-airflow">Configure Airflow</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#config-files">Config Files</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#managing-airflow-environment-variables">Managing Airflow Environment Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="5_airflow_installation.html#configure-airflow">Configure Airflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="5_airflow_installation.html#config-files">Config Files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="5_airflow_installation.html#managing-airflow-environment-variables">Managing Airflow Environment Variables</a></li>
 </ul>
 </li>
 </ul>
@@ -264,13 +264,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Airflow Installion Steps</li>
+      <li>Airflow Helm</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/5_airflow_installation.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/511_airflow_helm.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -283,111 +283,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="airflow-installion-steps">
-<h1>Airflow Installion Steps<a class="headerlink" href="#airflow-installion-steps" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="airflow-and-microk8s">
-<h2>Airflow and Microk8s<a class="headerlink" href="#airflow-and-microk8s" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="create-base-system-via-terraform">
-<h3>Create Base System via Terraform<a class="headerlink" href="#create-base-system-via-terraform" title="Permalink to this headline">¶</a></h3>
+  <div class="section" id="airflow-helm">
+<h1>Airflow Helm<a class="headerlink" href="#airflow-helm" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>/home/ec2-user/opt/airflow/tfinfra/butzer-sf-incubator</p></li>
-<li><p>make init</p></li>
-<li><p>make apply</p></li>
-<li><p>costs       # pinstance</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[ec2-user@ip-10-12-68-177 butzer-sf-incubator]$ costs | grep sf
-6  running            butzer-sf-incubator  10.12.69.170  t3a.2xlarge       219.584
-6  running            butzer-sf-incubator  10.12.69.170  t3a.2xlarge       219.584
-</pre></div>
-</div>
-</div>
-<div class="section" id="install-microk8s">
-<h3>Install Microk8s<a class="headerlink" href="#install-microk8s" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="install-snap-snapd">
-<h4>Install SNAP/SNAPD<a class="headerlink" href="#install-snap-snapd" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>NOTE: snapd does not like  symlinks</p></li>
-<li><p>cd pkg</p></li>
-<li><p>./install_snap_amazon_linux.sh</p></li>
-<li><p>sudo systemctl enable –now snapd.socket</p></li>
-<li><p>[x] test of snap on incubator complete?</p></li>
-</ul>
-</div>
-<div class="section" id="install-microk8s-via-snapd">
-<h4>Install Microk8s via SNAPD<a class="headerlink" href="#install-microk8s-via-snapd" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>sudo snap install microk8s –classic</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">usermod</span> <span class="o">-</span><span class="n">a</span> <span class="o">-</span><span class="n">G</span> <span class="n">microk8s</span> <span class="n">ec2</span><span class="o">-</span><span class="n">user</span>
-<span class="n">sudo</span> <span class="n">chown</span> <span class="o">-</span><span class="n">f</span> <span class="o">-</span><span class="n">R</span> <span class="n">ec2</span><span class="o">-</span><span class="n">user</span> <span class="o">~/.</span><span class="n">kube</span>
-
-<span class="c1">#### Logoff and on to add group</span>
-
-<span class="n">microk8s</span> <span class="n">status</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="enable-kubernetes-key-services">
-<h4>Enable Kubernetes Key Services<a class="headerlink" href="#enable-kubernetes-key-services" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">microk8s</span> <span class="n">enable</span> <span class="n">dns</span>
-<span class="n">microk8s</span> <span class="n">enable</span> <span class="n">dashboard</span>
-<span class="n">microk8s</span> <span class="n">enable</span> <span class="n">helm3</span>
-<span class="n">microk8s</span> <span class="n">status</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="test-k8s-dashboard-access">
-<h4>Test k8s Dashboard Access<a class="headerlink" href="#test-k8s-dashboard-access" title="Permalink to this headline">¶</a></h4>
-<blockquote>
-<div><p>This is sort of complicated and annoying – tony.</p>
-</div></blockquote>
-<ul class="simple">
-<li><p>alias k=’microk8s kubectl’</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">k</span> <span class="n">get</span> <span class="n">namespaces</span>
-
-<span class="n">k</span> <span class="n">get</span> <span class="n">svc</span> <span class="o">-</span><span class="n">n</span> <span class="n">kube</span><span class="o">-</span><span class="n">system</span> 
-</pre></div>
-</div>
-<hr class="docutils" />
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[ec2-user@ip-10-12-69-170 ~]$ k get svc -n kube-system
-NAME                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE
-kube-dns                    ClusterIP   10.152.183.10    &lt;none&gt;        53/UDP,53/TCP,9153/TCP   5m34s
-metrics-server              ClusterIP   10.152.183.65    &lt;none&gt;        443/TCP                  5m5s
-kubernetes-dashboard        ClusterIP   10.152.183.19    &lt;none&gt;        443/TCP                  4m57s
-dashboard-metrics-scraper   ClusterIP   10.152.183.173   &lt;none&gt;        8000/TCP                 4m57s
-</pre></div>
-</div>
-<div class="section" id="port-forward-the-dashboard">
-<h5>Port Forward The Dashboard<a class="headerlink" href="#port-forward-the-dashboard" title="Permalink to this headline">¶</a></h5>
-<ul class="simple">
-<li><p>microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 8000:443 –address 0.0.0.0</p></li>
-<li><p>https://10.12.69.170:8000 #### EXAMPLE- accept the risk - next the stupid token</p></li>
-<li><p>Token</p>
+<li><p>https://marclamberti.com/blog/airflow-on-kubernetes-get-started-in-10-mins/</p></li>
+<li><p>KinD</p>
 <ul>
-<li><p>microk8s kubectl create token default</p></li>
+<li><p>[ ] create a terraform - butzer-kindk8s</p></li>
 </ul>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="install-airflow-via-helm">
-<h3>Install Airflow via Helm<a class="headerlink" href="#install-airflow-via-helm" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="airflow-helm-chart-study-key-elements">
-<h4>Airflow Helm Chart Study Key Elements<a class="headerlink" href="#airflow-helm-chart-study-key-elements" title="Permalink to this headline">¶</a></h4>
-</div>
-</div>
-<div class="section" id="configure-airflow">
-<h3>Configure Airflow<a class="headerlink" href="#configure-airflow" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="config-files">
-<h4>Config Files<a class="headerlink" href="#config-files" title="Permalink to this headline">¶</a></h4>
-</div>
-<div class="section" id="managing-airflow-environment-variables">
-<h4>Managing Airflow Environment Variables<a class="headerlink" href="#managing-airflow-environment-variables" title="Permalink to this headline">¶</a></h4>
-</div>
-</div>
-</div>
 </div>
 
 
@@ -398,10 +303,10 @@ dashboard-metrics-scraper   ClusterIP   10.152.183.173   &lt;none&gt;        800
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="01_tasks.html" class="btn btn-neutral float-right" title="Tasks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="51_airflow_over_k8s.html" class="btn btn-neutral float-right" title="Airflow on Kubernetes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="51_airflow_over_k8s.html" class="btn btn-neutral float-left" title="Airflow on Kubernetes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="v2 - Welcome to Airflow Training Tony" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

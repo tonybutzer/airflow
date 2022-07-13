@@ -10,6 +10,7 @@ v2 - Welcome to Airflow Training Tony
    :maxdepth: 2
    :caption: Contents:
 
+   511_airflow_helm.md
    51_airflow_over_k8s.md
    5_airflow_installation.md
    01_tasks.md
