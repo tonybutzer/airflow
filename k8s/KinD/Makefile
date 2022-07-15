@@ -28,5 +28,24 @@ airinfo:
 	helm ls -n airflow
 
 
+airpf:
+	# port forward
+	kubectl port-forward -n airflow service/airflow-webserver 8080:8080 --address 0.0.0.0 &
+
+airval:
+	helm show values apache-airflow/airflow > values.yaml
+
+
+airupdate:
+	helm upgrade --install airflow apache-airflow/airflow -n airflow -f values.yaml --debug
+	helm ls -n airflow
+
+
+loadcustom:
+	kind load docker-image smartflowv2 --name airflow-cluster
+
+
+set-ssh-secret:
+	echo dag repo secret here
 publish:
 	(cd ~/opt/airflow; ./gitpush.sh)
