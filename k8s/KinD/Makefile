@@ -45,7 +45,16 @@ loadcustom:
 	kind load docker-image smartflowv2 --name airflow-cluster
 
 
+logpv:
+	kubectl apply -f pv.yaml
+	kubectl get pv -n airflow
+
+logpvc:
+	kubectl apply -f pvc.yaml
+	kubectl get pvc -n airflow
+
 set-ssh-secret:
 	echo dag repo secret here
+	kubectl create secret generic airflow-ssh-git-secret --from-file=gitSshKey=/home/ec2-user/.ssh/id_rsa -n airflow
 publish:
 	(cd ~/opt/airflow; ./gitpush.sh)

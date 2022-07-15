@@ -8,4 +8,5 @@
 
 # GIT reference
 
-- https://marclamberti.com/blog/airflow-kubernetes-executor/
+
+- https://github.com/marclamberti/webinar-airflow-chart
