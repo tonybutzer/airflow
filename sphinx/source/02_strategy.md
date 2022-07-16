@@ -2,6 +2,9 @@
 
 - **Rabbit Hole** --> used to refer to a bizarre, confusing, or nonsensical situation or environment, typically one from which it is difficult to extricate oneself.
 
+
+## Focus on Airflow aspects - delegate k8s details
+
 ## Use docker-compose airflow setup in smartflow ec2
 
 - why 
