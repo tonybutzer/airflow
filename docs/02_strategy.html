@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Engineering Notes &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
+  <title>Strategy Plan B &mdash; Airflow Sandbox Training in the cloud 1.0 documentation</title>
   
 
   
@@ -34,8 +34,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Quests" href="9_quests.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -80,7 +79,7 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="511_airflow_helm.html">Airflow Helm</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="511_airflow_helm.html#using-kind">Using KinD</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="511_airflow_helm.html#kind">KIND</a></li>
@@ -209,19 +208,19 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Engineering Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#smartflow-references">smartflow references</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#airflow-tutorial-videos-document-good-to-bad">Airflow Tutorial Videos - document good to bad</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#airflow-operators">Airflow Operators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#running-airflow-with-docker-compose">Running Airflow with Docker Compose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#docker-simple-orcherstration-python-docker-starts">Docker Simple Orcherstration - python docker starts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#rylie-notes">Rylie Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_engineering_notes.html">Engineering Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_engineering_notes.html#smartflow-references">smartflow references</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-tutorial-videos-document-good-to-bad">Airflow Tutorial Videos - document good to bad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-operators">Airflow Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#running-airflow-with-docker-compose">Running Airflow with Docker Compose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#docker-simple-orcherstration-python-docker-starts">Docker Simple Orcherstration - python docker starts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="3_engineering_notes.html#rylie-notes">Rylie Notes</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#airflow-scaling-celery">Airflow Scaling Celery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#just-celery">Just Celery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#terraform">Terraform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">TroubleShooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#airflow-scaling-celery">Airflow Scaling Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#just-celery">Just Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#terraform">Terraform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_engineering_notes.html#troubleshooting">TroubleShooting</a></li>
 </ul>
 </li>
 </ul>
@@ -269,13 +268,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Engineering Notes</li>
+      <li>Strategy Plan B</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/3_engineering_notes.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/02_strategy.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -288,93 +287,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="engineering-notes">
-<h1>Engineering Notes<a class="headerlink" href="#engineering-notes" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="section" id="smartflow-references">
-<h1>smartflow references<a class="headerlink" href="#smartflow-references" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="strategy-plan-b">
+<h1>Strategy Plan B<a class="headerlink" href="#strategy-plan-b" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>https://blacksky.smartgitlab.com/smartflow/markdown/Framework/Getting-Started.html</p></li>
-<li><p>https://app.slack.com/client/TN3QR7WAH/C03KCBSUMC0/thread/C03KCBSUMC0-1654795666.581149</p></li>
-<li><p>https://blacksky.smartgitlab.com/smartflow/markdown/Administration/Deployment.html#installation</p></li>
-<li><p>Repository Link: https://smartgitlab.com/blacksky/smartflow</p></li>
-<li><p>Documentation Link: https://blacksky.smartgitlab.com/smartflow</p></li>
+<li><p><strong>Rabbit Hole</strong> –&gt; used to refer to a bizarre, confusing, or nonsensical situation or environment, typically one from which it is difficult to extricate oneself.</p></li>
 </ul>
-<blockquote>
-<div><p>This channel is to be used for:
-SmartFlow Announcements
-General SmartFlow questions
-To coordinate specific tech support (most likely to be moved off channel for resolution)</p>
-</div></blockquote>
-<div class="section" id="airflow-tutorial-videos-document-good-to-bad">
-<h2>Airflow Tutorial Videos - document good to bad<a class="headerlink" href="#airflow-tutorial-videos-document-good-to-bad" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="use-docker-compose-airflow-setup-in-smartflow-ec2">
+<h2>Use docker-compose airflow setup in smartflow ec2<a class="headerlink" href="#use-docker-compose-airflow-setup-in-smartflow-ec2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>https://www.youtube.com/watch?v=AHMm1wfGuHE</p></li>
-</ul>
-</div>
-<div class="section" id="airflow-operators">
-<h2>Airflow Operators<a class="headerlink" href="#airflow-operators" title="Permalink to this headline">¶</a></h2>
+<li><p>why</p>
 <ul>
-<li><p>bash</p></li>
-<li><p>noop</p></li>
-<li><p>SimpleHttpOperator</p></li>
-<li><p>EmailOperator</p>
-<p>BashOperator - executes a bash command</p>
-<p>PythonOperator - calls an arbitrary Python function</p>
-<p>EmailOperator - sends an email</p>
+<li><p>a simpler way</p></li>
+</ul>
 </li>
-<li><p>https://stackoverflow.com/questions/62660347/airflow-send-email-with-aws-ses</p></li>
+<li><p>issues</p>
+<ul>
+<li><p>does not support k8s scaling - uses celery</p></li>
 </ul>
-</div>
-<div class="section" id="running-airflow-with-docker-compose">
-<h2>Running Airflow with Docker Compose<a class="headerlink" href="#running-airflow-with-docker-compose" title="Permalink to this headline">¶</a></h2>
+</li>
+<li><p>[ ] reorg compose directory</p></li>
+<li><p>[ ] explore logging in s3 with airflow</p></li>
+</ul>
+<div class="section" id="gaass-py-code">
+<h3>gaass-py cODE<a class="headerlink" href="#gaass-py-code" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html</p></li>
-<li><p>https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="o">--</span><span class="n">profile</span> <span class="n">flower</span> <span class="n">up</span>
-<span class="c1"># put in a makefile - tony</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="docker-simple-orcherstration-python-docker-starts">
-<h2>Docker Simple Orcherstration - python docker starts<a class="headerlink" href="#docker-simple-orcherstration-python-docker-starts" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="rylie-notes">
-<h3>Rylie Notes<a class="headerlink" href="#rylie-notes" title="Permalink to this headline">¶</a></h3>
-</div>
-</div>
-<div class="section" id="airflow-scaling-celery">
-<h2>Airflow Scaling Celery<a class="headerlink" href="#airflow-scaling-celery" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>https://airflow.apache.org/docs/apache-airflow/1.10.1/howto/executor/use-celery.html</p></li>
+<li><p>[ ] Stub out DAG from Rylie’s flow chart</p></li>
+<li><p>[ ] Scale with Celery but isolate the scaling code</p></li>
 </ul>
 </div>
-<div class="section" id="just-celery">
-<h2>Just Celery<a class="headerlink" href="#just-celery" title="Permalink to this headline">¶</a></h2>
-<p>https://www.youtube.com/watch?v=mcX_4EvYka4</p>
-</div>
-<div class="section" id="terraform">
-<h2>Terraform<a class="headerlink" href="#terraform" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>https://medium.com/typeforms-engineering-blog/deploy-airflow-1-10-10-in-kubernetes-using-terraform-and-helm-2476f03f07d0</p></li>
-</ul>
-</div>
-<div class="section" id="troubleshooting">
-<h2>TroubleShooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>https://stackoverflow.com/questions/45534535/airflow-not-loading-dags-in-usr-local-airflow-dags</p></li>
-<li><p>https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/installation.html</p></li>
-<li><p>https://zero-to-jupyterhub.readthedocs.io/en/latest/jupyterhub/customizing/user-storage.html</p></li>
-<li><p>https://github.com/jupyterhub/zero-to-jupyterhub-k8s/issues/1597</p></li>
-<li><p>https://aws.amazon.com/about-aws/whats-new/2019/12/run-serverless-kubernetes-pods-using-amazon-eks-and-aws-fargate/</p></li>
-<li><p>https://platform9.com/blog/fargate-vs-upstream-kubernetes/</p></li>
-<li><p>https://aws.amazon.com/blogs/containers/running-airflow-on-aws-fargate/</p></li>
-<li><p>https://microk8s.io/docs/addon-dashboard</p></li>
-<li><p>https://k9scli.io/</p></li>
-<li><p>https://vinayak.io/2020/09/10/day-24-jupyterhub-airflow-microk8s/</p></li>
-<li><p>https://jupyterhub.readthedocs.io/en/0.7.1/getting-started.html</p></li>
-<li><p>https://jamesdefabia.github.io/docs/user-guide/kubectl/kubectl_proxy/</p></li>
-</ul>
 </div>
 </div>
 
@@ -383,13 +323,6 @@ To coordinate specific tech support (most likely to be moved off channel for res
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="9_quests.html" class="btn btn-neutral float-left" title="Quests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
